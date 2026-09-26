@@ -1,0 +1,10 @@
+The context documents, property descriptions, and license are copied unchanged
+from CodeMeta. sources.json records their paths, revisions, and SHA-256 hashes.
+The contexts' Apache-2.0 license is reproduced in LICENSE.
+
+Generation reads only the @context portion; master's @graph describes the
+vocabulary itself. Property ranges come from properties_description.csv, grouped
+by the schema or CodeMeta namespace and property name. Multiple descriptions in
+the same namespace contribute alternatives. A context term absent from that CSV
+has no inferred range restriction. Context @type and @container declarations are
+retained independently of those property ranges.

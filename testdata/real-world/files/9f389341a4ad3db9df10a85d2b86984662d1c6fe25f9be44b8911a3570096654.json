@@ -1,0 +1,261 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "identifier": "cercospoRa",
+  "description": "Estimates sugar beet canopy closure with remotely sensed leaf area index and estimates when action might be needed to protect the crop from a Cercospora leaf spot (_Cercospora beticola_) epidemic with a negative prognosis model based on the work of Wolf and Verreet (2005) Phytopathology, 95, no.3, 269-74.",
+  "name": "cercospoRa: Process Based Epidemiological Model for Cercospora Leaf Spot of Sugar Beet",
+  "relatedLink": ["https://paul.melloy.com.au/cercospoRa/", "http://paul.melloy.com.au/cercospoRa/"],
+  "codeRepository": "https://github.com/PaulMelloy/cercospoRa",
+  "issueTracker": "https://github.com/PaulMelloy/cercospoRa/issues",
+  "license": "https://spdx.org/licenses/MIT",
+  "version": "0.0.0.9003",
+  "programmingLanguage": {
+    "@type": "ComputerLanguage",
+    "name": "R",
+    "url": "https://r-project.org"
+  },
+  "runtimePlatform": "R version 4.4.2 (2024-10-31)",
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Paul",
+      "familyName": "Melloy",
+      "email": "paul@melloy.com.au",
+      "@id": "https://orcid.org/0000-0003-4253-7167"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Rene",
+      "familyName": "Heim",
+      "email": "heim@ifz-goettingen.de",
+      "@id": "https://orcid.org/0000-0002-0666-2588"
+    }
+  ],
+  "contributor": [
+    {
+      "@type": "Person",
+      "givenName": "Nathan",
+      "familyName": "Okole",
+      "email": "okole@ifz-goettingen.de",
+      "@id": "https://orcid.org/0000-0002-5375-2420"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Facundo Ramón",
+      "familyName": "Ispizua Yamati",
+      "email": "ispizua@ifz-goettingen.de",
+      "@id": "https://orcid.org/0000-0001-5775-3554"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Anne-Katrin",
+      "familyName": "Mahlein",
+      "@id": "https://orcid.org/0000-0003-1091-3690"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Facundo Ramón",
+      "familyName": "Ispizua Yamati",
+      "email": "ispizua@ifz-goettingen.de",
+      "@id": "https://orcid.org/0000-0001-5775-3554"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Paul",
+      "familyName": "Melloy",
+      "email": "paul@melloy.com.au",
+      "@id": "https://orcid.org/0000-0003-4253-7167"
+    }
+  ],
+  "copyrightHolder": [
+    {
+      "@type": "Person",
+      "givenName": "Paul",
+      "familyName": "Melloy",
+      "email": "paul@melloy.com.au",
+      "@id": "https://orcid.org/0000-0003-4253-7167"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Rene",
+      "familyName": "Heim",
+      "email": "heim@ifz-goettingen.de",
+      "@id": "https://orcid.org/0000-0002-0666-2588"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Nathan",
+      "familyName": "Okole",
+      "email": "okole@ifz-goettingen.de",
+      "@id": "https://orcid.org/0000-0002-5375-2420"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Anne-Katrin",
+      "familyName": "Mahlein",
+      "@id": "https://orcid.org/0000-0003-1091-3690"
+    }
+  ],
+  "maintainer": [
+    {
+      "@type": "Person",
+      "givenName": "Paul",
+      "familyName": "Melloy",
+      "email": "paul@melloy.com.au",
+      "@id": "https://orcid.org/0000-0003-4253-7167"
+    }
+  ],
+  "softwareSuggestions": [
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "knitr",
+      "name": "knitr",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=knitr"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "rmarkdown",
+      "name": "rmarkdown",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=rmarkdown"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "testthat",
+      "name": "testthat",
+      "version": ">= 3.0.0",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=testthat"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "lubridate",
+      "name": "lubridate",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=lubridate"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "remotes",
+      "name": "remotes",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=remotes"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "stats",
+      "name": "stats"
+    }
+  ],
+  "softwareRequirements": {
+    "1": {
+      "@type": "SoftwareApplication",
+      "identifier": "data.table",
+      "name": "data.table",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=data.table"
+    },
+    "2": {
+      "@type": "SoftwareApplication",
+      "identifier": "Rdpack",
+      "name": "Rdpack",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=Rdpack"
+    },
+    "3": {
+      "@type": "SoftwareApplication",
+      "identifier": "sf",
+      "name": "sf",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=sf"
+    },
+    "4": {
+      "@type": "SoftwareApplication",
+      "identifier": "terra",
+      "name": "terra",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=terra"
+    },
+    "5": {
+      "@type": "SoftwareApplication",
+      "identifier": "minpack.lm",
+      "name": "minpack.lm",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=minpack.lm"
+    },
+    "6": {
+      "@type": "SoftwareApplication",
+      "identifier": "circular",
+      "name": "circular",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=circular"
+    },
+    "7": {
+      "@type": "SoftwareApplication",
+      "identifier": "R",
+      "name": "R",
+      "version": ">= 4.0.0"
+    },
+    "SystemRequirements": null
+  },
+  "fileSize": "3375.129KB",
+  "releaseNotes": "https://github.com/PaulMelloy/cercospoRa/blob/master/NEWS.md",
+  "readme": "https://github.com/PaulMelloy/cercospoRa/blob/main/README.md",
+  "developmentStatus": "https://www.repostatus.org/#active"
+}

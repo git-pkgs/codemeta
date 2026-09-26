@@ -1,0 +1,64 @@
+{
+    "@context": "https://w3id.org/codemeta/3.0",
+    "applicationCategory": "SoftwareSourceCode",
+    "author": [
+        {
+            "@id": "https://github.com/KonradHoeffner",
+            "@type": "Person"
+        }
+    ],
+    "codeRepository": "https://github.com/KonradHoeffner/softwaresurvey",
+    "dateCreated": "2025-03-31",
+    "datePublished": "2025-05-13",
+    "description": "A Jupyter Notebook to showcase and explore the results of the nfdi.software marketplace survey, which surveyed the NFDI landscape (51 respondents from 23 out of 26 consortia) between March and April 2025 to understand the current state of software metadata and marketplaces.",
+    "identifier": "https://zenodo.org/badge/latestdoi/957867644",
+    "isPartOf": "https://nfdi.software/",
+    "keywords": [
+        {
+            "name": "NFDI",
+            "@id": "https://www.nfdi.de/",
+            "@type": "DefinedTerm"
+        },
+        "software metadata",
+        {
+            "name": "base4nfdi",
+            "@id": "https://base4nfdi.de",
+            "@type": "DefinedTerm"
+        },
+        "survey",
+        "software marketplace"
+    ],
+    "license": "https://spdx.org/licenses/CC0-1.0",
+    "name": "Descriptive review of already existing solutions, plans and policies regarding software marketplaces in NFDI consortia",
+    "programmingLanguage": "Python",
+    "referencePublication": [
+        {
+            "author": [
+                {
+                    "familyName": "Höffner",
+                    "givenName": "Konrad",
+                    "@id": "https://orcid.org/0000-0001-7358-3217",
+                    "@type": "Person"
+                },
+                {
+                    "familyName": "Löbe",
+                    "givenName": "Matthias",
+                    "@id": "https://orcid.org/0000-0002-2344-0426",
+                    "@type": "Person"
+                }
+            ],
+            "datePublished": "2025",
+            "identifier": "10.5281/zenodo.15394434",
+            "name": "Descriptive review of already existing solutions, plans and policies regarding software marketplaces in NFDI consortia",
+            "url": "https://doi.org/10.5281/zenodo.15394434",
+            "@type": "ScholarlyArticle"
+        }
+    ],
+    "runtimePlatform": "Jupyter Notebook",
+    "softwareRequirements": [
+        "to generate the PDF: a LaTeX flavor that supports fontspec, so regular pdfLaTeX does not work (tested with tectonic based on XeTeX and TeXLive)"
+    ],
+    "developmentStatus": "inactive",
+    "issueTracker": "https://github.com/KonradHoeffner/softwaresurvey/issues",
+    "@type": "SoftwareSourceCode"
+}

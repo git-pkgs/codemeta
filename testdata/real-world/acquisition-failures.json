@@ -1,0 +1,12 @@
+[
+  {
+    "repository": "https://github.com/ropensci-review-tools/dashboard",
+    "path": "codemeta.json",
+    "error": "fatal: path 'codemeta.json' does not exist in '83b605640dd50e17248ee7721a7fefac4d389419'\n83b605640dd50e17248ee7721a7fefac4d389419:codemeta.json\n"
+  },
+  {
+    "repository": "https://github.com/cboettig/codemeta",
+    "path": "codemeta.json",
+    "error": "fatal: not a git repository (or any of the parent directories): .git\n"
+  }
+]

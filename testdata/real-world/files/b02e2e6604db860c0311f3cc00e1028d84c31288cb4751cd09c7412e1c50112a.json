@@ -1,0 +1,48 @@
+{
+    "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "type": "SoftwareSourceCode",
+    "applicationCategory": "geosciences",
+    "author": [
+        {
+            "id": "https://orcid.org/0000-0003-2533-7016",
+            "type": "Person",
+            "affiliation": {
+                "type": "Organization",
+                "name": "The University of Texas at Austin"
+            },
+            "email": "cinarturhan@utexas.edu",
+            "familyName": "Turhan",
+            "givenName": "Cinar"
+        },
+        {
+            "type": "Person",
+            "affiliation": {
+                "type": "Organization",
+                "name": "The University of Texas at Austin"
+            },
+            "email": "masha@utexas.edu",
+            "familyName": "Prodanovic",
+            "givenName": "Masa"
+        }
+    ],
+    "codeRepository": "https://github.com/digital-porous-media/image_processing_workflow",
+    "dateCreated": "2024-01-01",
+    "dateModified": "2024-04-11",
+    "datePublished": "2024-04-11",
+    "description": "This workflow is intended to be an automated process for\n  analyzing image datasets from Digital Rocks Portal.",
+    "isPartOf": "https://github.com/digital-porous-media/",
+    "keywords": [
+        "beam_hardening",
+        "image_processing",
+        "segmentation",
+        "image_filtering",
+        "image_correction",
+        "porous_media_imaging"
+    ],
+    "license": "https://spdx.org/licenses/MIT",
+    "name": "‎image_processing_workflow‎",
+    "programmingLanguage": "Python3",
+    "relatedLink": "https://github.com/digital-porous-media/",
+    "releaseNotes": "Initial release",
+    "version": "0.1"
+}

@@ -1,0 +1,3810 @@
+[
+  {
+    "repository": "https://github.com/assume-framework/assume",
+    "path": "codemeta.json",
+    "commit": "15dfa77039ae2d774181a9087af66e2944df25b2",
+    "blob": "7ef99700246639bf99911651cf13fd0c9c171f5e",
+    "sha256": "0f2a2147e88da6a3f91af1f379515a1576a0e6921161744d1d1b60623ea65491",
+    "file": "files/0f2a2147e88da6a3f91af1f379515a1576a0e6921161744d1d1b60623ea65491.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": "https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.jsonld",
+    "json": "valid",
+    "compact": true,
+    "parse": "ok",
+    "error_position": null,
+    "version": "master",
+    "name": "ASSUME",
+    "diagnostics": [
+      {
+        "code": "value_type",
+        "path": "author[0].affiliation",
+        "message": "expected Organization",
+        "line": 10,
+        "column": 22
+      },
+      {
+        "code": "value_type",
+        "path": "author[1].affiliation",
+        "message": "expected Organization",
+        "line": 17,
+        "column": 22
+      },
+      {
+        "code": "value_type",
+        "path": "author[2].affiliation",
+        "message": "expected Organization",
+        "line": 24,
+        "column": 22
+      },
+      {
+        "code": "value_type",
+        "path": "author[3].affiliation",
+        "message": "expected Organization",
+        "line": 31,
+        "column": 22
+      }
+    ],
+    "classification": "unresolved",
+    "reason": "Retained for compatibility review; diagnostics describe range or context membership differences, without an upstream validity claim."
+  },
+  {
+    "repository": "https://github.com/rbfinch/grepq",
+    "path": "codemeta.json",
+    "commit": "113edc3276a23f18672c7373399ec02f75dc264d",
+    "blob": "cc5b3488bdc75c059ffbee1b56a821636dc2844c",
+    "sha256": "506f5d3e2a599e0b035e156d8933b303ce36d40fcdda60c3db5a67968d6baeb6",
+    "file": "files/506f5d3e2a599e0b035e156d8933b303ce36d40fcdda60c3db5a67968d6baeb6.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": "https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.jsonld",
+    "json": "valid",
+    "compact": true,
+    "parse": "ok",
+    "error_position": null,
+    "version": "master",
+    "name": "",
+    "diagnostics": [
+      {
+        "code": "unknown_type",
+        "path": "@type",
+        "message": "type is not defined by the declared context",
+        "line": 3,
+        "column": 12
+      },
+      {
+        "code": "value_type",
+        "path": "author[0].affiliation",
+        "message": "expected Organization",
+        "line": 10,
+        "column": 22
+      },
+      {
+        "code": "invalid_url",
+        "path": "license",
+        "message": "expected an absolute URL",
+        "line": 20,
+        "column": 14
+      },
+      {
+        "code": "unknown_term",
+        "path": "title",
+        "message": "term is not defined by the declared context",
+        "line": 21,
+        "column": 3
+      }
+    ],
+    "classification": "unresolved",
+    "reason": "Retained for compatibility review; diagnostics describe range or context membership differences, without an upstream validity claim."
+  },
+  {
+    "repository": "https://github.com/denajgibbon/gibbonnetr",
+    "path": "codemeta.json",
+    "commit": "2550eee1313358dfa79772e86f2f732b5afa2c40",
+    "blob": "b2a872ed44d3563e2c635af5a39b861d3b05bfac",
+    "sha256": "ba902e05e4b2ef72f96a444552226e478a67d7b6a428e3a5dd551271f7e3dbcb",
+    "file": "files/ba902e05e4b2ef72f96a444552226e478a67d7b6a428e3a5dd551271f7e3dbcb.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "json": "valid",
+    "compact": true,
+    "parse": "ok",
+    "error_position": null,
+    "version": "2.0",
+    "name": "gibbonNetR: gibbonNetR: R Package for the Use of CNNs and Transfer Learning on\n    Acoustic Data",
+    "diagnostics": [
+      {
+        "code": "invalid_url",
+        "path": "identifier",
+        "message": "expected an absolute URL",
+        "line": 4,
+        "column": 17
+      },
+      {
+        "code": "unknown_type",
+        "path": "programmingLanguage.@type",
+        "message": "type is not defined by the declared context",
+        "line": 12,
+        "column": 14
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[0].identifier",
+        "message": "expected an absolute URL",
+        "line": 38,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[1].identifier",
+        "message": "expected an absolute URL",
+        "line": 50,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[2].identifier",
+        "message": "expected an absolute URL",
+        "line": 62,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[3].identifier",
+        "message": "expected an absolute URL",
+        "line": 74,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.1",
+        "message": "term is not defined by the declared context",
+        "line": 87,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.1.identifier",
+        "message": "expected an absolute URL",
+        "line": 89,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.2",
+        "message": "term is not defined by the declared context",
+        "line": 99,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.2.identifier",
+        "message": "expected an absolute URL",
+        "line": 101,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.3",
+        "message": "term is not defined by the declared context",
+        "line": 105,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.3.identifier",
+        "message": "expected an absolute URL",
+        "line": 107,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.4",
+        "message": "term is not defined by the declared context",
+        "line": 117,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.4.identifier",
+        "message": "expected an absolute URL",
+        "line": 119,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.5",
+        "message": "term is not defined by the declared context",
+        "line": 129,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.5.identifier",
+        "message": "expected an absolute URL",
+        "line": 131,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.6",
+        "message": "term is not defined by the declared context",
+        "line": 141,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.6.identifier",
+        "message": "expected an absolute URL",
+        "line": 143,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.7",
+        "message": "term is not defined by the declared context",
+        "line": 153,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.7.identifier",
+        "message": "expected an absolute URL",
+        "line": 155,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.8",
+        "message": "term is not defined by the declared context",
+        "line": 165,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.8.identifier",
+        "message": "expected an absolute URL",
+        "line": 167,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.9",
+        "message": "term is not defined by the declared context",
+        "line": 177,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.9.identifier",
+        "message": "expected an absolute URL",
+        "line": 179,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.10",
+        "message": "term is not defined by the declared context",
+        "line": 189,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.10.identifier",
+        "message": "expected an absolute URL",
+        "line": 191,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.11",
+        "message": "term is not defined by the declared context",
+        "line": 201,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.11.identifier",
+        "message": "expected an absolute URL",
+        "line": 203,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.12",
+        "message": "term is not defined by the declared context",
+        "line": 213,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.12.identifier",
+        "message": "expected an absolute URL",
+        "line": 215,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.13",
+        "message": "term is not defined by the declared context",
+        "line": 225,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.13.identifier",
+        "message": "expected an absolute URL",
+        "line": 227,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.14",
+        "message": "term is not defined by the declared context",
+        "line": 237,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.14.identifier",
+        "message": "expected an absolute URL",
+        "line": 239,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.15",
+        "message": "term is not defined by the declared context",
+        "line": 249,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.15.identifier",
+        "message": "expected an absolute URL",
+        "line": 251,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.16",
+        "message": "term is not defined by the declared context",
+        "line": 254,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.16.identifier",
+        "message": "expected an absolute URL",
+        "line": 256,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.17",
+        "message": "term is not defined by the declared context",
+        "line": 266,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.17.identifier",
+        "message": "expected an absolute URL",
+        "line": 268,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.18",
+        "message": "term is not defined by the declared context",
+        "line": 278,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.18.identifier",
+        "message": "expected an absolute URL",
+        "line": 280,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.19",
+        "message": "term is not defined by the declared context",
+        "line": 290,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.19.identifier",
+        "message": "expected an absolute URL",
+        "line": 292,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.20",
+        "message": "term is not defined by the declared context",
+        "line": 302,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.20.identifier",
+        "message": "expected an absolute URL",
+        "line": 304,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.21",
+        "message": "term is not defined by the declared context",
+        "line": 314,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.21.identifier",
+        "message": "expected an absolute URL",
+        "line": 316,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.22",
+        "message": "term is not defined by the declared context",
+        "line": 319,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.22.identifier",
+        "message": "expected an absolute URL",
+        "line": 321,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.23",
+        "message": "term is not defined by the declared context",
+        "line": 331,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.23.identifier",
+        "message": "expected an absolute URL",
+        "line": 333,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.24",
+        "message": "term is not defined by the declared context",
+        "line": 343,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.24.identifier",
+        "message": "expected an absolute URL",
+        "line": 345,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.25",
+        "message": "term is not defined by the declared context",
+        "line": 355,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.25.identifier",
+        "message": "expected an absolute URL",
+        "line": 357,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.26",
+        "message": "term is not defined by the declared context",
+        "line": 367,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.26.identifier",
+        "message": "expected an absolute URL",
+        "line": 369,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.27",
+        "message": "term is not defined by the declared context",
+        "line": 379,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.27.identifier",
+        "message": "expected an absolute URL",
+        "line": 381,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.28",
+        "message": "term is not defined by the declared context",
+        "line": 384,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.28.identifier",
+        "message": "expected an absolute URL",
+        "line": 386,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.SystemRequirements",
+        "message": "term is not defined by the declared context",
+        "line": 396,
+        "column": 5
+      },
+      {
+        "code": "unknown_type",
+        "path": "citation[0].isPartOf.@type",
+        "message": "type is not defined by the declared context",
+        "line": 418,
+        "column": 18
+      },
+      {
+        "code": "unknown_type",
+        "path": "citation[0].isPartOf.isPartOf.@type[0]",
+        "message": "type is not defined by the declared context",
+        "line": 421,
+        "column": 21
+      },
+      {
+        "code": "unknown_type",
+        "path": "citation[0].isPartOf.isPartOf.@type[1]",
+        "message": "type is not defined by the declared context",
+        "line": 421,
+        "column": 42
+      }
+    ],
+    "classification": "unresolved",
+    "reason": "Retained for compatibility review; diagnostics describe range or context membership differences, without an upstream validity claim."
+  },
+  {
+    "repository": "https://github.com/nichollsh/agni",
+    "path": "codemeta.json",
+    "commit": "9f6a49a59fb8d84a4985aa6587f4753d518caac7",
+    "blob": "4e3969af0ced2ce8e18c3fa4d1a24012392eff36",
+    "sha256": "bf6bbd09ac4d2f6cd64fc4d2d9bcd17644bb6edd2faaa6a37418db54ba37ed0b",
+    "file": "files/bf6bbd09ac4d2f6cd64fc4d2d9bcd17644bb6edd2faaa6a37418db54ba37ed0b.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": "https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.json",
+    "json": "valid",
+    "compact": true,
+    "parse": "ok",
+    "error_position": null,
+    "version": "",
+    "name": "",
+    "diagnostics": [
+      {
+        "code": "unsupported_version",
+        "path": "@context",
+        "message": "context is not one of the pinned CodeMeta contexts",
+        "line": 2,
+        "column": 15
+      }
+    ],
+    "classification": "unsupported_version",
+    "reason": "The declared contexts include a context outside the pinned set."
+  },
+  {
+    "repository": "https://github.com/ropensci/gtexr",
+    "path": "codemeta.json",
+    "commit": "03abf00ad979023b5377ebdf6dff4a19dc79688c",
+    "blob": "2e01e0b44cc7605d773add25c94a97e52ede53f5",
+    "sha256": "f78e114e9202d5a6ead39d0cfa40907098a12af0a95a5277df092a9bbd6e3b06",
+    "file": "files/f78e114e9202d5a6ead39d0cfa40907098a12af0a95a5277df092a9bbd6e3b06.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "json": "valid",
+    "compact": false,
+    "parse": "ok",
+    "error_position": null,
+    "version": "2.0",
+    "name": "gtexr: Query the GTEx Portal API",
+    "diagnostics": [
+      {
+        "code": "invalid_url",
+        "path": "identifier",
+        "message": "expected an absolute URL",
+        "line": 4,
+        "column": 17
+      },
+      {
+        "code": "unknown_type",
+        "path": "programmingLanguage.@type",
+        "message": "type is not defined by the declared context",
+        "line": 13,
+        "column": 14
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[0].identifier",
+        "message": "expected an absolute URL",
+        "line": 78,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[1].identifier",
+        "message": "expected an absolute URL",
+        "line": 90,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[2].identifier",
+        "message": "expected an absolute URL",
+        "line": 102,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[3].identifier",
+        "message": "expected an absolute URL",
+        "line": 114,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[4].identifier",
+        "message": "expected an absolute URL",
+        "line": 126,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.1",
+        "message": "term is not defined by the declared context",
+        "line": 139,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.1.identifier",
+        "message": "expected an absolute URL",
+        "line": 141,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.2",
+        "message": "term is not defined by the declared context",
+        "line": 151,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.2.identifier",
+        "message": "expected an absolute URL",
+        "line": 153,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.3",
+        "message": "term is not defined by the declared context",
+        "line": 163,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.3.identifier",
+        "message": "expected an absolute URL",
+        "line": 165,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.4",
+        "message": "term is not defined by the declared context",
+        "line": 176,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.4.identifier",
+        "message": "expected an absolute URL",
+        "line": 178,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.5",
+        "message": "term is not defined by the declared context",
+        "line": 188,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.5.identifier",
+        "message": "expected an absolute URL",
+        "line": 190,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.6",
+        "message": "term is not defined by the declared context",
+        "line": 200,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.6.identifier",
+        "message": "expected an absolute URL",
+        "line": 202,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.7",
+        "message": "term is not defined by the declared context",
+        "line": 212,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.7.identifier",
+        "message": "expected an absolute URL",
+        "line": 214,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.SystemRequirements",
+        "message": "term is not defined by the declared context",
+        "line": 224,
+        "column": 5
+      }
+    ],
+    "classification": "unresolved",
+    "reason": "Retained for compatibility review; diagnostics describe range or context membership differences, without an upstream validity claim."
+  },
+  {
+    "repository": "https://github.com/sbi-dev/sbi",
+    "path": "codemeta.json",
+    "commit": "ab535304454f0199325cde39cf8127722b5cde95",
+    "blob": "f658d941c93da5886bbea896bbd406f78ea9c83e",
+    "sha256": "334d0c2b230e0a3556205551f7fc6527781305f8766a9bea53b47ae41821b362",
+    "file": "files/334d0c2b230e0a3556205551f7fc6527781305f8766a9bea53b47ae41821b362.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "json": "valid",
+    "compact": true,
+    "parse": "ok",
+    "error_position": null,
+    "version": "2.0",
+    "name": "sbi: Simulation-based inference toolkit",
+    "diagnostics": [
+      {
+        "code": "unknown_type",
+        "path": "referencePublication[0].@type",
+        "message": "type is not defined by the declared context",
+        "line": 66,
+        "column": 22
+      }
+    ],
+    "classification": "unresolved",
+    "reason": "Retained for compatibility review; diagnostics describe range or context membership differences, without an upstream validity claim."
+  },
+  {
+    "repository": "https://github.com/siara-cc/unishox2",
+    "path": "codemeta.json",
+    "commit": "4981d9403de3bdd1938a635ab73f8a2c5a536059",
+    "blob": "8b751a9bdaec6cb32bd792a9643d479287a605b1",
+    "sha256": "a19041792677a3bfe41236ca1dc4d864cfe1c48d47e4c2a7a0fa7087fa616c0c",
+    "file": "files/a19041792677a3bfe41236ca1dc4d864cfe1c48d47e4c2a7a0fa7087fa616c0c.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": "https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.jsonld",
+    "json": "valid",
+    "compact": false,
+    "parse": "ok",
+    "error_position": null,
+    "version": "master",
+    "name": "",
+    "diagnostics": [
+      {
+        "code": "unknown_type",
+        "path": "@type",
+        "message": "type is not defined by the declared context",
+        "line": 3,
+        "column": 12
+      },
+      {
+        "code": "value_type",
+        "path": "author[0]",
+        "message": "expected Organization Person",
+        "line": 4,
+        "column": 14
+      },
+      {
+        "code": "invalid_url",
+        "path": "identifier",
+        "message": "expected an absolute URL",
+        "line": 6,
+        "column": 17
+      },
+      {
+        "code": "invalid_url",
+        "path": "license",
+        "message": "expected an absolute URL",
+        "line": 13,
+        "column": 14
+      },
+      {
+        "code": "unknown_term",
+        "path": "title",
+        "message": "term is not defined by the declared context",
+        "line": 14,
+        "column": 3
+      }
+    ],
+    "classification": "unresolved",
+    "reason": "Retained for compatibility review; diagnostics describe range or context membership differences, without an upstream validity claim."
+  },
+  {
+    "repository": "https://github.com/stenskjaer/samewords",
+    "path": "codemeta.json",
+    "commit": "fe371b0c10c45b2e7bcc4fd03eba537afa4f094d",
+    "blob": "10e28210a95137ac7934947e62adac9f3edcaf65",
+    "sha256": "f29122cccf34ab78a8861c9368e98d75c3bbe19a3c6fb0934f9e6e9d4f8ec2bf",
+    "file": "files/f29122cccf34ab78a8861c9368e98d75c3bbe19a3c6fb0934f9e6e9d4f8ec2bf.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": "https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.jsonld",
+    "json": "valid",
+    "compact": false,
+    "parse": "ok",
+    "error_position": null,
+    "version": "master",
+    "name": "",
+    "diagnostics": [
+      {
+        "code": "unknown_type",
+        "path": "@type",
+        "message": "type is not defined by the declared context",
+        "line": 3,
+        "column": 12
+      },
+      {
+        "code": "value_type",
+        "path": "author[0].affiliation",
+        "message": "expected Organization",
+        "line": 10,
+        "column": 22
+      },
+      {
+        "code": "invalid_url",
+        "path": "license",
+        "message": "expected an absolute URL",
+        "line": 20,
+        "column": 14
+      },
+      {
+        "code": "unknown_term",
+        "path": "title",
+        "message": "term is not defined by the declared context",
+        "line": 21,
+        "column": 3
+      }
+    ],
+    "classification": "unresolved",
+    "reason": "Retained for compatibility review; diagnostics describe range or context membership differences, without an upstream validity claim."
+  },
+  {
+    "repository": "https://github.com/scikit-hep/root_numpy",
+    "path": "codemeta.json",
+    "commit": "049e487879d70dd93c97e323ba6b71c56d4759e8",
+    "blob": "bf38752cb0e71181bc4cb325531c4089e65a2041",
+    "sha256": "bb1e08b1d5d2f4b330d9f3e5ff489b7b6f85264231ddb839fce569857d871915",
+    "file": "files/bb1e08b1d5d2f4b330d9f3e5ff489b7b6f85264231ddb839fce569857d871915.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": "https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.jsonld",
+    "json": "valid",
+    "compact": false,
+    "parse": "ok",
+    "error_position": null,
+    "version": "master",
+    "name": "",
+    "diagnostics": [
+      {
+        "code": "unknown_type",
+        "path": "@type",
+        "message": "type is not defined by the declared context",
+        "line": 3,
+        "column": 12
+      },
+      {
+        "code": "value_type",
+        "path": "author[0].affiliation",
+        "message": "expected Organization",
+        "line": 10,
+        "column": 22
+      },
+      {
+        "code": "value_type",
+        "path": "author[1].affiliation",
+        "message": "expected Organization",
+        "line": 17,
+        "column": 22
+      },
+      {
+        "code": "value_type",
+        "path": "author[2].affiliation",
+        "message": "expected Organization",
+        "line": 24,
+        "column": 22
+      },
+      {
+        "code": "invalid_url",
+        "path": "license",
+        "message": "expected an absolute URL",
+        "line": 34,
+        "column": 14
+      },
+      {
+        "code": "unknown_term",
+        "path": "title",
+        "message": "term is not defined by the declared context",
+        "line": 35,
+        "column": 3
+      }
+    ],
+    "classification": "unresolved",
+    "reason": "Retained for compatibility review; diagnostics describe range or context membership differences, without an upstream validity claim."
+  },
+  {
+    "repository": "https://github.com/languagemachines/ucto",
+    "path": "codemeta.json",
+    "commit": "72752b94c7dfde03e7821098a791cb6ac0d85e41",
+    "blob": "e0201e5e8979f951820b16dcd6fb1a6df309a07c",
+    "sha256": "c145f2746db8a4cf52fa70f1198cbf3b26069d687c68a6d05d26cc1fe5e4c39e",
+    "file": "files/c145f2746db8a4cf52fa70f1198cbf3b26069d687c68a6d05d26cc1fe5e4c39e.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": [
+      "https://doi.org/10.5063/schema/codemeta-2.0",
+      "http://schema.org",
+      "https://w3id.org/software-types",
+      "https://w3id.org/software-iodata"
+    ],
+    "json": "valid",
+    "compact": false,
+    "parse": "ok",
+    "error_position": null,
+    "version": "2.0",
+    "name": "ucto",
+    "diagnostics": [
+      {
+        "code": "unsupported_version",
+        "path": "@context",
+        "message": "context is not one of the pinned CodeMeta contexts",
+        "line": 2,
+        "column": 17
+      }
+    ],
+    "classification": "unsupported_version",
+    "reason": "The declared contexts include a context outside the pinned set."
+  },
+  {
+    "repository": "https://github.com/ropensci/rpolyhedra",
+    "path": "codemeta.json",
+    "commit": "9c0986f5de27d368c74303b361f6a7afd2dbd728",
+    "blob": "4344956e4293caa34e82a3efa0f2bbac03dc08ca",
+    "sha256": "b4efad02ce1f5ee6bef8391493793675d85fa43f958790d2c51b7cbc2aca5f54",
+    "file": "files/b4efad02ce1f5ee6bef8391493793675d85fa43f958790d2c51b7cbc2aca5f54.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "json": "valid",
+    "compact": false,
+    "parse": "ok",
+    "error_position": null,
+    "version": "2.0",
+    "name": "Rpolyhedra: Polyhedra Database",
+    "diagnostics": [
+      {
+        "code": "invalid_url",
+        "path": "identifier",
+        "message": "expected an absolute URL",
+        "line": 4,
+        "column": 17
+      },
+      {
+        "code": "unknown_type",
+        "path": "programmingLanguage.@type",
+        "message": "type is not defined by the declared context",
+        "line": 13,
+        "column": 14
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[0].identifier",
+        "message": "expected an absolute URL",
+        "line": 76,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[1].identifier",
+        "message": "expected an absolute URL",
+        "line": 88,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[2].identifier",
+        "message": "expected an absolute URL",
+        "line": 100,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[3].identifier",
+        "message": "expected an absolute URL",
+        "line": 112,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[4].identifier",
+        "message": "expected an absolute URL",
+        "line": 124,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[5].identifier",
+        "message": "expected an absolute URL",
+        "line": 136,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.1",
+        "message": "term is not defined by the declared context",
+        "line": 148,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.1.identifier",
+        "message": "expected an absolute URL",
+        "line": 150,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.2",
+        "message": "term is not defined by the declared context",
+        "line": 154,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.2.identifier",
+        "message": "expected an absolute URL",
+        "line": 156,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.3",
+        "message": "term is not defined by the declared context",
+        "line": 166,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.3.identifier",
+        "message": "expected an absolute URL",
+        "line": 168,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.4",
+        "message": "term is not defined by the declared context",
+        "line": 178,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.4.identifier",
+        "message": "expected an absolute URL",
+        "line": 180,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.5",
+        "message": "term is not defined by the declared context",
+        "line": 191,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.5.identifier",
+        "message": "expected an absolute URL",
+        "line": 193,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.6",
+        "message": "term is not defined by the declared context",
+        "line": 203,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.6.identifier",
+        "message": "expected an absolute URL",
+        "line": 205,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.7",
+        "message": "term is not defined by the declared context",
+        "line": 215,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.7.identifier",
+        "message": "expected an absolute URL",
+        "line": 217,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.8",
+        "message": "term is not defined by the declared context",
+        "line": 227,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.8.identifier",
+        "message": "expected an absolute URL",
+        "line": 229,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.9",
+        "message": "term is not defined by the declared context",
+        "line": 239,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.9.identifier",
+        "message": "expected an absolute URL",
+        "line": 241,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.10",
+        "message": "term is not defined by the declared context",
+        "line": 251,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.10.identifier",
+        "message": "expected an absolute URL",
+        "line": 253,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.SystemRequirements",
+        "message": "term is not defined by the declared context",
+        "line": 263,
+        "column": 5
+      },
+      {
+        "code": "term_version",
+        "path": "review",
+        "message": "term is not defined by the declared context",
+        "line": 269,
+        "column": 3
+      },
+      {
+        "code": "type_version",
+        "path": "review.@type",
+        "message": "type is not defined by the declared context",
+        "line": 270,
+        "column": 14
+      },
+      {
+        "code": "value_type",
+        "path": "review.provider",
+        "message": "expected Organization Person",
+        "line": 272,
+        "column": 17
+      }
+    ],
+    "classification": "unresolved",
+    "reason": "Retained for compatibility review; diagnostics describe range or context membership differences, without an upstream validity claim."
+  },
+  {
+    "repository": "https://github.com/howardbaik/audrey",
+    "path": "codemeta.json",
+    "commit": "80c80a45287304b94509b10526cb237ad3b65b37",
+    "blob": "a2607d72e888017b92df1a9d689c9fdae23e2c6a",
+    "sha256": "dcbe315eec76482b966f365842d0bca23e7107fd27dec1eaccea36cc19e415f8",
+    "file": "files/dcbe315eec76482b966f365842d0bca23e7107fd27dec1eaccea36cc19e415f8.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "json": "valid",
+    "compact": false,
+    "parse": "ok",
+    "error_position": null,
+    "version": "2.0",
+    "name": "audrey: Client for the OpenAI's 'Whisper' Model",
+    "diagnostics": [
+      {
+        "code": "invalid_url",
+        "path": "identifier",
+        "message": "expected an absolute URL",
+        "line": 4,
+        "column": 17
+      },
+      {
+        "code": "unknown_type",
+        "path": "programmingLanguage.@type",
+        "message": "type is not defined by the declared context",
+        "line": 12,
+        "column": 14
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[0].identifier",
+        "message": "expected an absolute URL",
+        "line": 38,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[1].identifier",
+        "message": "expected an absolute URL",
+        "line": 50,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[2].identifier",
+        "message": "expected an absolute URL",
+        "line": 62,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.1",
+        "message": "term is not defined by the declared context",
+        "line": 75,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.1.identifier",
+        "message": "expected an absolute URL",
+        "line": 77,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.2",
+        "message": "term is not defined by the declared context",
+        "line": 87,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.2.identifier",
+        "message": "expected an absolute URL",
+        "line": 89,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.3",
+        "message": "term is not defined by the declared context",
+        "line": 92,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.3.identifier",
+        "message": "expected an absolute URL",
+        "line": 94,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.SystemRequirements",
+        "message": "term is not defined by the declared context",
+        "line": 104,
+        "column": 5
+      }
+    ],
+    "classification": "unresolved",
+    "reason": "Retained for compatibility review; diagnostics describe range or context membership differences, without an upstream validity claim."
+  },
+  {
+    "repository": "https://github.com/2xs/pipcore-mpu",
+    "path": "codemeta.json",
+    "commit": "3efd0b97356d44acbee7416abb0ce0666cf35df6",
+    "blob": "f9da49387221fc4c67eab30b37dbfbf6bc194c01",
+    "sha256": "bcba097a4c38265933e7428392af00bd301d901e18b460f77c38a3d1b1d2c4a7",
+    "file": "files/bcba097a4c38265933e7428392af00bd301d901e18b460f77c38a3d1b1d2c4a7.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": [
+      "https://doi.org/10.5063/schema/codemeta-2.0"
+    ],
+    "json": "valid",
+    "compact": true,
+    "parse": "ok",
+    "error_position": null,
+    "version": "2.0",
+    "name": "pipcore-mpu",
+    "diagnostics": [
+      {
+        "code": "unknown_term",
+        "path": "referencePublication.hal",
+        "message": "term is not defined by the declared context",
+        "line": 65,
+        "column": 9
+      }
+    ],
+    "classification": "unresolved",
+    "reason": "Retained for compatibility review; diagnostics describe range or context membership differences, without an upstream validity claim."
+  },
+  {
+    "repository": "https://github.com/johannamz/clusterapp",
+    "path": "codemeta.json",
+    "commit": "2f3585b73daba423659af9e6bcd8c192bd739647",
+    "blob": "153bdbadde1aca9f0f7cbdaedc7cea2b60871b17",
+    "sha256": "2e92e1beba2ef463b1e943d6d3e34ab4f8ef7007aa1d0a7deec43fc042346808",
+    "file": "files/2e92e1beba2ef463b1e943d6d3e34ab4f8ef7007aa1d0a7deec43fc042346808.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "json": "valid",
+    "compact": false,
+    "parse": "ok",
+    "error_position": null,
+    "version": "2.0",
+    "name": "ClusterApp: A Shiny R application to guide and streamline cluster studies based\n    on GPS data",
+    "diagnostics": [
+      {
+        "code": "invalid_url",
+        "path": "identifier",
+        "message": "expected an absolute URL",
+        "line": 4,
+        "column": 17
+      },
+      {
+        "code": "unknown_type",
+        "path": "programmingLanguage.@type",
+        "message": "type is not defined by the declared context",
+        "line": 12,
+        "column": 14
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[0].identifier",
+        "message": "expected an absolute URL",
+        "line": 70,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[1].identifier",
+        "message": "expected an absolute URL",
+        "line": 82,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[2].identifier",
+        "message": "expected an absolute URL",
+        "line": 94,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[3].identifier",
+        "message": "expected an absolute URL",
+        "line": 106,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.1",
+        "message": "term is not defined by the declared context",
+        "line": 118,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.1.identifier",
+        "message": "expected an absolute URL",
+        "line": 120,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.2",
+        "message": "term is not defined by the declared context",
+        "line": 124,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.2.identifier",
+        "message": "expected an absolute URL",
+        "line": 126,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.3",
+        "message": "term is not defined by the declared context",
+        "line": 136,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.3.identifier",
+        "message": "expected an absolute URL",
+        "line": 138,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.4",
+        "message": "term is not defined by the declared context",
+        "line": 149,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.4.identifier",
+        "message": "expected an absolute URL",
+        "line": 151,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.5",
+        "message": "term is not defined by the declared context",
+        "line": 161,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.5.identifier",
+        "message": "expected an absolute URL",
+        "line": 163,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.6",
+        "message": "term is not defined by the declared context",
+        "line": 173,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.6.identifier",
+        "message": "expected an absolute URL",
+        "line": 175,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.7",
+        "message": "term is not defined by the declared context",
+        "line": 185,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.7.identifier",
+        "message": "expected an absolute URL",
+        "line": 187,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.8",
+        "message": "term is not defined by the declared context",
+        "line": 198,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.8.identifier",
+        "message": "expected an absolute URL",
+        "line": 200,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.9",
+        "message": "term is not defined by the declared context",
+        "line": 210,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.9.identifier",
+        "message": "expected an absolute URL",
+        "line": 212,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.10",
+        "message": "term is not defined by the declared context",
+        "line": 222,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.10.identifier",
+        "message": "expected an absolute URL",
+        "line": 224,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.11",
+        "message": "term is not defined by the declared context",
+        "line": 234,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.11.identifier",
+        "message": "expected an absolute URL",
+        "line": 236,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.12",
+        "message": "term is not defined by the declared context",
+        "line": 246,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.12.identifier",
+        "message": "expected an absolute URL",
+        "line": 248,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.13",
+        "message": "term is not defined by the declared context",
+        "line": 251,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.13.identifier",
+        "message": "expected an absolute URL",
+        "line": 253,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.14",
+        "message": "term is not defined by the declared context",
+        "line": 263,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.14.identifier",
+        "message": "expected an absolute URL",
+        "line": 265,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.15",
+        "message": "term is not defined by the declared context",
+        "line": 275,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.15.identifier",
+        "message": "expected an absolute URL",
+        "line": 277,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.16",
+        "message": "term is not defined by the declared context",
+        "line": 287,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.16.identifier",
+        "message": "expected an absolute URL",
+        "line": 289,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.17",
+        "message": "term is not defined by the declared context",
+        "line": 299,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.17.identifier",
+        "message": "expected an absolute URL",
+        "line": 301,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.18",
+        "message": "term is not defined by the declared context",
+        "line": 311,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.18.identifier",
+        "message": "expected an absolute URL",
+        "line": 313,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.19",
+        "message": "term is not defined by the declared context",
+        "line": 324,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.19.identifier",
+        "message": "expected an absolute URL",
+        "line": 326,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.20",
+        "message": "term is not defined by the declared context",
+        "line": 336,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.20.identifier",
+        "message": "expected an absolute URL",
+        "line": 338,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.21",
+        "message": "term is not defined by the declared context",
+        "line": 348,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.21.identifier",
+        "message": "expected an absolute URL",
+        "line": 350,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.22",
+        "message": "term is not defined by the declared context",
+        "line": 353,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.22.identifier",
+        "message": "expected an absolute URL",
+        "line": 355,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.23",
+        "message": "term is not defined by the declared context",
+        "line": 365,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.23.identifier",
+        "message": "expected an absolute URL",
+        "line": 367,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.24",
+        "message": "term is not defined by the declared context",
+        "line": 377,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.24.identifier",
+        "message": "expected an absolute URL",
+        "line": 379,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.25",
+        "message": "term is not defined by the declared context",
+        "line": 389,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.25.identifier",
+        "message": "expected an absolute URL",
+        "line": 391,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.SystemRequirements",
+        "message": "term is not defined by the declared context",
+        "line": 394,
+        "column": 5
+      }
+    ],
+    "classification": "unresolved",
+    "reason": "Retained for compatibility review; diagnostics describe range or context membership differences, without an upstream validity claim."
+  },
+  {
+    "repository": "https://github.com/leonawicz/trekcolors",
+    "path": "codemeta.json",
+    "commit": "30d12ecbd3e0e56764001ff1b9924501d5cdcedd",
+    "blob": "db1927fc0a63ecc3536f13dd2f0af0e4937a81b0",
+    "sha256": "19dcd618ff976e3375afe2a65c02c7ebfddd93ad45faebf697e6460210b3b8be",
+    "file": "files/19dcd618ff976e3375afe2a65c02c7ebfddd93ad45faebf697e6460210b3b8be.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "json": "valid",
+    "compact": false,
+    "parse": "ok",
+    "error_position": null,
+    "version": "2.0",
+    "name": "trekcolors: Star Trek Color Palettes",
+    "diagnostics": [
+      {
+        "code": "invalid_url",
+        "path": "identifier",
+        "message": "expected an absolute URL",
+        "line": 4,
+        "column": 17
+      },
+      {
+        "code": "unknown_type",
+        "path": "programmingLanguage.@type",
+        "message": "type is not defined by the declared context",
+        "line": 12,
+        "column": 14
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[0].identifier",
+        "message": "expected an absolute URL",
+        "line": 44,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[1].identifier",
+        "message": "expected an absolute URL",
+        "line": 56,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[2].identifier",
+        "message": "expected an absolute URL",
+        "line": 68,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[3].identifier",
+        "message": "expected an absolute URL",
+        "line": 80,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.1",
+        "message": "term is not defined by the declared context",
+        "line": 92,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.1.identifier",
+        "message": "expected an absolute URL",
+        "line": 94,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.2",
+        "message": "term is not defined by the declared context",
+        "line": 98,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.2.identifier",
+        "message": "expected an absolute URL",
+        "line": 100,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.SystemRequirements",
+        "message": "term is not defined by the declared context",
+        "line": 110,
+        "column": 5
+      }
+    ],
+    "classification": "unresolved",
+    "reason": "Retained for compatibility review; diagnostics describe range or context membership differences, without an upstream validity claim."
+  },
+  {
+    "repository": "https://github.com/egi-federation/bdii",
+    "path": "codemeta.json",
+    "commit": "c6b01373b0996700ed2a536cb365e4425a18502c",
+    "blob": "a0de9d329646889dbefab2fdb3352bf24558c931",
+    "sha256": "2581063544e468059aff3a611dc8ebb1864b35e933bc6b7d9cacf4b394d50b61",
+    "file": "files/2581063544e468059aff3a611dc8ebb1864b35e933bc6b7d9cacf4b394d50b61.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "json": "valid",
+    "compact": true,
+    "parse": "ok",
+    "error_position": null,
+    "version": "2.0",
+    "name": "Berkeley Database Information Index (BDII)",
+    "diagnostics": [
+      {
+        "code": "unknown_type",
+        "path": "@type",
+        "message": "type is not defined by the declared context",
+        "line": 3,
+        "column": 12
+      },
+      {
+        "code": "invalid_url",
+        "path": "provider.url",
+        "message": "expected an absolute URL",
+        "line": 9,
+        "column": 12
+      },
+      {
+        "code": "type_version",
+        "path": "maintainer[4].@type",
+        "message": "type is not defined by the declared context",
+        "line": 57,
+        "column": 16
+      },
+      {
+        "code": "term_version",
+        "path": "maintainer[4].roleName",
+        "message": "term is not defined by the declared context",
+        "line": 58,
+        "column": 7
+      },
+      {
+        "code": "invalid_url",
+        "path": "maintainer[4].url",
+        "message": "expected an absolute URL",
+        "line": 59,
+        "column": 14
+      },
+      {
+        "code": "unknown_term",
+        "path": "networkStack",
+        "message": "term is not defined by the declared context",
+        "line": 72,
+        "column": 3
+      },
+      {
+        "code": "unknown_term",
+        "path": "supportUnit",
+        "message": "term is not defined by the declared context",
+        "line": 73,
+        "column": 3
+      },
+      {
+        "code": "type_version",
+        "path": "supportUnit.@type",
+        "message": "type is not defined by the declared context",
+        "line": 74,
+        "column": 14
+      },
+      {
+        "code": "term_version",
+        "path": "supportUnit.contactType",
+        "message": "term is not defined by the declared context",
+        "line": 75,
+        "column": 5
+      },
+      {
+        "code": "invalid_date",
+        "path": "dateCreated",
+        "message": "invalid calendar date or date-time",
+        "line": 81,
+        "column": 18
+      },
+      {
+        "code": "invalid_date",
+        "path": "dateModified",
+        "message": "invalid calendar date or date-time",
+        "line": 82,
+        "column": 19
+      },
+      {
+        "code": "invalid_url",
+        "path": "license",
+        "message": "expected an absolute URL",
+        "line": 88,
+        "column": 14
+      }
+    ],
+    "classification": "unresolved",
+    "reason": "Retained for compatibility review; diagnostics describe range or context membership differences, without an upstream validity claim."
+  },
+  {
+    "repository": "https://github.com/digital-porous-media/image_processing_workflow",
+    "path": "codemeta.json",
+    "commit": "c9d6a449a26803b68ffd835bdbc2187a9520c084",
+    "blob": "cc77c0d0815b851cbd957680ab5fb9e981dcdfa6",
+    "sha256": "b02e2e6604db860c0311f3cc00e1028d84c31288cb4751cd09c7412e1c50112a",
+    "file": "files/b02e2e6604db860c0311f3cc00e1028d84c31288cb4751cd09c7412e1c50112a.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "json": "valid",
+    "compact": false,
+    "parse": "ok",
+    "error_position": null,
+    "version": "2.0",
+    "name": "‎image_processing_workflow‎",
+    "diagnostics": [
+      {
+        "code": "value_type",
+        "path": "isPartOf",
+        "message": "expected CreativeWork",
+        "line": 33,
+        "column": 17
+      }
+    ],
+    "classification": "unresolved",
+    "reason": "Retained for compatibility review; diagnostics describe range or context membership differences, without an upstream validity claim."
+  },
+  {
+    "repository": "https://github.com/jorgeming/article_graph",
+    "path": "codemeta.json",
+    "commit": "65c9a6075c0cfad702388751a1b68ff5e65735a0",
+    "blob": "df289b38fe2e421117f3a52b5404be35cd2d4976",
+    "sha256": "4f3b95d6af900231e366d40c7c11109e325c7d4901bd316344da5671ea39ed0d",
+    "file": "files/4f3b95d6af900231e366d40c7c11109e325c7d4901bd316344da5671ea39ed0d.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "json": "valid",
+    "compact": false,
+    "parse": "ok",
+    "error_position": null,
+    "version": "2.0",
+    "name": "Article_Graph",
+    "diagnostics": [
+      {
+        "code": "invalid_date",
+        "path": "datePublished",
+        "message": "invalid calendar date or date-time",
+        "line": 7,
+        "column": 20
+      },
+      {
+        "code": "invalid_date",
+        "path": "dateModified",
+        "message": "invalid calendar date or date-time",
+        "line": 8,
+        "column": 19
+      },
+      {
+        "code": "invalid_iri",
+        "path": "softwareRequirements[0]",
+        "message": "expected an IRI reference",
+        "line": 28,
+        "column": 28
+      }
+    ],
+    "classification": "unresolved",
+    "reason": "Retained for compatibility review; diagnostics describe range or context membership differences, without an upstream validity claim."
+  },
+  {
+    "repository": "https://github.com/sebastienboutry/inrae-project-website",
+    "path": "codemeta.json",
+    "commit": "9c992e7420e155c02c5a52a94ce3623bc44538a1",
+    "blob": "38d0d95ac2925323ce0393ffbdd9168501993faf",
+    "sha256": "982b596a7882f81684aba10fe98edfc11b641a9b4fe2c09e93fbdd3e9490485b",
+    "file": "files/982b596a7882f81684aba10fe98edfc11b641a9b4fe2c09e93fbdd3e9490485b.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "json": "valid",
+    "compact": false,
+    "parse": "ok",
+    "error_position": null,
+    "version": "2.0",
+    "name": "Quarto Website project template for INRAE",
+    "diagnostics": [
+      {
+        "code": "value_type",
+        "path": "author[1].schema:author",
+        "message": "expected Organization Person",
+        "line": 18,
+        "column": 30
+      },
+      {
+        "code": "term_version",
+        "path": "author[1].schema:roleName",
+        "message": "term is not defined by the declared context",
+        "line": 19,
+        "column": 13
+      },
+      {
+        "code": "value_type",
+        "path": "author[2].schema:author",
+        "message": "expected Organization Person",
+        "line": 23,
+        "column": 30
+      },
+      {
+        "code": "term_version",
+        "path": "author[2].schema:roleName",
+        "message": "term is not defined by the declared context",
+        "line": 24,
+        "column": 13
+      },
+      {
+        "code": "value_type",
+        "path": "author[4].schema:author",
+        "message": "expected Organization Person",
+        "line": 38,
+        "column": 30
+      },
+      {
+        "code": "term_version",
+        "path": "author[4].schema:roleName",
+        "message": "term is not defined by the declared context",
+        "line": 39,
+        "column": 13
+      },
+      {
+        "code": "value_type",
+        "path": "author[5].schema:author",
+        "message": "expected Organization Person",
+        "line": 43,
+        "column": 30
+      },
+      {
+        "code": "term_version",
+        "path": "author[5].schema:roleName",
+        "message": "term is not defined by the declared context",
+        "line": 44,
+        "column": 13
+      },
+      {
+        "code": "value_type",
+        "path": "author[7].schema:author",
+        "message": "expected Organization Person",
+        "line": 59,
+        "column": 30
+      },
+      {
+        "code": "term_version",
+        "path": "author[7].schema:roleName",
+        "message": "term is not defined by the declared context",
+        "line": 60,
+        "column": 13
+      },
+      {
+        "code": "value_type",
+        "path": "author[9].schema:author",
+        "message": "expected Organization Person",
+        "line": 75,
+        "column": 30
+      },
+      {
+        "code": "term_version",
+        "path": "author[9].schema:roleName",
+        "message": "term is not defined by the declared context",
+        "line": 76,
+        "column": 13
+      }
+    ],
+    "classification": "unresolved",
+    "reason": "Retained for compatibility review; diagnostics describe range or context membership differences, without an upstream validity claim."
+  },
+  {
+    "repository": "https://github.com/greta008/helloworld",
+    "path": "codemeta.json",
+    "commit": "0ee1f842c3293655bc7a09907fa8fc60cff3c316",
+    "blob": "03371bc06331063bc153b9840190dbd496877d27",
+    "sha256": "99ad92b91a59aa9445d1c7a304f1ab6c554fae510b0b9f36873e8b36165d1dd7",
+    "file": "files/99ad92b91a59aa9445d1c7a304f1ab6c554fae510b0b9f36873e8b36165d1dd7.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "json": "invalid",
+    "compact": true,
+    "parse": "syntax",
+    "error_position": {
+      "line": 8,
+      "column": 5
+    },
+    "version": "",
+    "name": "",
+    "diagnostics": [],
+    "classification": "invalid_file",
+    "reason": "Malformed JSON rejected independently by Ruby JSON and this parser."
+  },
+  {
+    "repository": "https://github.com/km3net/km3io",
+    "path": "codemeta.json",
+    "commit": "c7b1aaedfd10f05ccd84c25b077c85f3ed362472",
+    "blob": "aa6f4e6b38767722c3c3c188d2eac74fbd13e647",
+    "sha256": "823d1b04d03f0a83e839a5881333c131f94daf5fb4d90d00511b2acedb028693",
+    "file": "files/823d1b04d03f0a83e839a5881333c131f94daf5fb4d90d00511b2acedb028693.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "json": "valid",
+    "compact": false,
+    "parse": "ok",
+    "error_position": null,
+    "version": "2.0",
+    "name": "km3io",
+    "diagnostics": [
+      {
+        "code": "value_type",
+        "path": "maintainer",
+        "message": "expected Person",
+        "line": 14,
+        "column": 19
+      },
+      {
+        "code": "value_type",
+        "path": "copyrightHolder",
+        "message": "expected Organization Person",
+        "line": 21,
+        "column": 24
+      }
+    ],
+    "classification": "unresolved",
+    "reason": "Retained for compatibility review; diagnostics describe range or context membership differences, without an upstream validity claim."
+  },
+  {
+    "repository": "https://github.com/wimmics/indegx",
+    "path": "codemeta.json",
+    "commit": "b6b2691ed1941c0268bb48553619172f05372e18",
+    "blob": "e4eb303775140bc337ed7498ddfd021e5ec92fdf",
+    "sha256": "ce1a02eda8be7a5c0e0221594b085634a581f1f83061e6764c311d16ac36dc4b",
+    "file": "files/ce1a02eda8be7a5c0e0221594b085634a581f1f83061e6764c311d16ac36dc4b.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": "https://w3id.org/codemeta/3.0",
+    "json": "valid",
+    "compact": true,
+    "parse": "ok",
+    "error_position": null,
+    "version": "3.0",
+    "name": "IndeGx",
+    "diagnostics": [
+      {
+        "code": "value_type",
+        "path": "author[1].schema:author",
+        "message": "expected Organization Person",
+        "line": 19,
+        "column": 30
+      },
+      {
+        "code": "invalid_url",
+        "path": "identifier",
+        "message": "expected an absolute URL",
+        "line": 35,
+        "column": 19
+      }
+    ],
+    "classification": "unresolved",
+    "reason": "Retained for compatibility review; diagnostics describe range or context membership differences, without an upstream validity claim."
+  },
+  {
+    "repository": "https://github.com/konradhoeffner/softwaresurvey",
+    "path": "codemeta.json",
+    "commit": "fa5c02476ebb89531b1d3a53477dbebf67cd1fb4",
+    "blob": "d24e4125acbea017f400947f11c6c167bdae5544",
+    "sha256": "7d7a9afc7e8842a3ff7da24bac8167eb029de98cfcf58e7c6cee451cfed6cb73",
+    "file": "files/7d7a9afc7e8842a3ff7da24bac8167eb029de98cfcf58e7c6cee451cfed6cb73.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": "https://w3id.org/codemeta/3.0",
+    "json": "valid",
+    "compact": true,
+    "parse": "ok",
+    "error_position": null,
+    "version": "3.0",
+    "name": "Descriptive review of already existing solutions, plans and policies regarding software marketplaces in NFDI consortia",
+    "diagnostics": [
+      {
+        "code": "value_type",
+        "path": "isPartOf",
+        "message": "expected CreativeWork",
+        "line": 15,
+        "column": 17
+      },
+      {
+        "code": "type_version",
+        "path": "keywords[0].@type",
+        "message": "type is not defined by the declared context",
+        "line": 20,
+        "column": 22
+      },
+      {
+        "code": "type_version",
+        "path": "keywords[2].@type",
+        "message": "type is not defined by the declared context",
+        "line": 26,
+        "column": 22
+      },
+      {
+        "code": "invalid_url",
+        "path": "referencePublication[0].identifier",
+        "message": "expected an absolute URL",
+        "line": 51,
+        "column": 27
+      },
+      {
+        "code": "unknown_type",
+        "path": "referencePublication[0].@type",
+        "message": "type is not defined by the declared context",
+        "line": 54,
+        "column": 22
+      },
+      {
+        "code": "invalid_iri",
+        "path": "softwareRequirements[0]",
+        "message": "expected an IRI reference",
+        "line": 59,
+        "column": 9
+      }
+    ],
+    "classification": "unresolved",
+    "reason": "Retained for compatibility review; diagnostics describe range or context membership differences, without an upstream validity claim."
+  },
+  {
+    "repository": "https://github.com/stylescape/example-vite",
+    "path": "codemeta.json",
+    "commit": "e13f90e0a2dba4f7802b706ce927eaa8cac60334",
+    "blob": "ed1956131dcd2ce0a1c07ae67209037bc3049949",
+    "sha256": "579caf1ca5a4bf57aaefa319a019555d67c867a9581c2b4217ba4055362b207e",
+    "file": "files/579caf1ca5a4bf57aaefa319a019555d67c867a9581c2b4217ba4055362b207e.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "json": "valid",
+    "compact": false,
+    "parse": "ok",
+    "error_position": null,
+    "version": "2.0",
+    "name": "Stylescape Example for Vite",
+    "diagnostics": [
+      {
+        "code": "invalid_iri",
+        "path": "softwareRequirements",
+        "message": "expected an IRI reference",
+        "line": 58,
+        "column": 29
+      }
+    ],
+    "classification": "unresolved",
+    "reason": "Retained for compatibility review; diagnostics describe range or context membership differences, without an upstream validity claim."
+  },
+  {
+    "repository": "https://github.com/paulmelloy/cercospora",
+    "path": "codemeta.json",
+    "commit": "8570ce711abb137a50f750dcd066d08d64c768b6",
+    "blob": "d56cdc4a9827657a993e71cfdee8ea261960e750",
+    "sha256": "9f389341a4ad3db9df10a85d2b86984662d1c6fe25f9be44b8911a3570096654",
+    "file": "files/9f389341a4ad3db9df10a85d2b86984662d1c6fe25f9be44b8911a3570096654.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "json": "valid",
+    "compact": false,
+    "parse": "ok",
+    "error_position": null,
+    "version": "2.0",
+    "name": "cercospoRa: Process Based Epidemiological Model for Cercospora Leaf Spot of Sugar Beet",
+    "diagnostics": [
+      {
+        "code": "invalid_url",
+        "path": "identifier",
+        "message": "expected an absolute URL",
+        "line": 4,
+        "column": 17
+      },
+      {
+        "code": "unknown_type",
+        "path": "programmingLanguage.@type",
+        "message": "type is not defined by the declared context",
+        "line": 13,
+        "column": 14
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[0].identifier",
+        "message": "expected an absolute URL",
+        "line": 111,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[1].identifier",
+        "message": "expected an absolute URL",
+        "line": 123,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[2].identifier",
+        "message": "expected an absolute URL",
+        "line": 135,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[3].identifier",
+        "message": "expected an absolute URL",
+        "line": 148,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[4].identifier",
+        "message": "expected an absolute URL",
+        "line": 160,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[5].identifier",
+        "message": "expected an absolute URL",
+        "line": 172,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.1",
+        "message": "term is not defined by the declared context",
+        "line": 177,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.1.identifier",
+        "message": "expected an absolute URL",
+        "line": 179,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.2",
+        "message": "term is not defined by the declared context",
+        "line": 189,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.2.identifier",
+        "message": "expected an absolute URL",
+        "line": 191,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.3",
+        "message": "term is not defined by the declared context",
+        "line": 201,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.3.identifier",
+        "message": "expected an absolute URL",
+        "line": 203,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.4",
+        "message": "term is not defined by the declared context",
+        "line": 213,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.4.identifier",
+        "message": "expected an absolute URL",
+        "line": 215,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.5",
+        "message": "term is not defined by the declared context",
+        "line": 225,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.5.identifier",
+        "message": "expected an absolute URL",
+        "line": 227,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.6",
+        "message": "term is not defined by the declared context",
+        "line": 237,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.6.identifier",
+        "message": "expected an absolute URL",
+        "line": 239,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.7",
+        "message": "term is not defined by the declared context",
+        "line": 249,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.7.identifier",
+        "message": "expected an absolute URL",
+        "line": 251,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.SystemRequirements",
+        "message": "term is not defined by the declared context",
+        "line": 255,
+        "column": 5
+      }
+    ],
+    "classification": "unresolved",
+    "reason": "Retained for compatibility review; diagnostics describe range or context membership differences, without an upstream validity claim."
+  },
+  {
+    "repository": "https://github.com/damienbelveze/plagiator",
+    "path": "codemeta.json",
+    "commit": "f0a2eba215e6dae0ddf2413c7cfee6b3c25e2c85",
+    "blob": "3f28ad2b83ae59ff2ab85c95aab666f0dca8487b",
+    "sha256": "ad160478f224b4d2876cb54cf8356ad612c42aba38f8ac149cb3046169346571",
+    "file": "files/ad160478f224b4d2876cb54cf8356ad612c42aba38f8ac149cb3046169346571.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "json": "valid",
+    "compact": true,
+    "parse": "ok",
+    "error_position": null,
+    "version": "2.0",
+    "name": "Plagiator",
+    "diagnostics": [],
+    "classification": "agreement",
+    "reason": "No differences found in represented metadata or pinned-context checks."
+  },
+  {
+    "repository": "https://github.com/biotimehub/biotimer",
+    "path": "codemeta.json",
+    "commit": "7c33f32f0235d2bb396ea8b71f7f39a91f0253f9",
+    "blob": "0c5e088376c31d6133bc1e42faf50f4e081a35fa",
+    "sha256": "ec2ba8de3b98886979e8e5c6b72df1791b66e599922ec5fc83c7a57772a10148",
+    "file": "files/ec2ba8de3b98886979e8e5c6b72df1791b66e599922ec5fc83c7a57772a10148.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "json": "valid",
+    "compact": false,
+    "parse": "ok",
+    "error_position": null,
+    "version": "2.0",
+    "name": "BioTIMEr: Tools to Use and Explore the 'BioTIME' Database",
+    "diagnostics": [
+      {
+        "code": "invalid_url",
+        "path": "identifier",
+        "message": "expected an absolute URL",
+        "line": 4,
+        "column": 17
+      },
+      {
+        "code": "unknown_type",
+        "path": "programmingLanguage.@type",
+        "message": "type is not defined by the declared context",
+        "line": 12,
+        "column": 14
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[0].identifier",
+        "message": "expected an absolute URL",
+        "line": 144,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[1].identifier",
+        "message": "expected an absolute URL",
+        "line": 156,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[2].identifier",
+        "message": "expected an absolute URL",
+        "line": 168,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[3].identifier",
+        "message": "expected an absolute URL",
+        "line": 180,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[4].identifier",
+        "message": "expected an absolute URL",
+        "line": 193,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[5].identifier",
+        "message": "expected an absolute URL",
+        "line": 205,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.1",
+        "message": "term is not defined by the declared context",
+        "line": 217,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.1.identifier",
+        "message": "expected an absolute URL",
+        "line": 219,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.2",
+        "message": "term is not defined by the declared context",
+        "line": 223,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.2.identifier",
+        "message": "expected an absolute URL",
+        "line": 225,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.3",
+        "message": "term is not defined by the declared context",
+        "line": 235,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.3.identifier",
+        "message": "expected an absolute URL",
+        "line": 237,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.4",
+        "message": "term is not defined by the declared context",
+        "line": 247,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.4.identifier",
+        "message": "expected an absolute URL",
+        "line": 249,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.5",
+        "message": "term is not defined by the declared context",
+        "line": 259,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.5.identifier",
+        "message": "expected an absolute URL",
+        "line": 261,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.6",
+        "message": "term is not defined by the declared context",
+        "line": 271,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.6.identifier",
+        "message": "expected an absolute URL",
+        "line": 273,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.7",
+        "message": "term is not defined by the declared context",
+        "line": 283,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.7.identifier",
+        "message": "expected an absolute URL",
+        "line": 285,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.8",
+        "message": "term is not defined by the declared context",
+        "line": 295,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.8.identifier",
+        "message": "expected an absolute URL",
+        "line": 297,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.9",
+        "message": "term is not defined by the declared context",
+        "line": 308,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.9.identifier",
+        "message": "expected an absolute URL",
+        "line": 310,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.10",
+        "message": "term is not defined by the declared context",
+        "line": 320,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.10.identifier",
+        "message": "expected an absolute URL",
+        "line": 322,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.SystemRequirements",
+        "message": "term is not defined by the declared context",
+        "line": 332,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "citation[0].identifier",
+        "message": "expected an absolute URL",
+        "line": 397,
+        "column": 21
+      }
+    ],
+    "classification": "unresolved",
+    "reason": "Retained for compatibility review; diagnostics describe range or context membership differences, without an upstream validity claim."
+  },
+  {
+    "repository": "https://github.com/languagemachines/frog",
+    "path": "codemeta.json",
+    "commit": "89517334998b628d3101a04a46da8e60c9aff9c5",
+    "blob": "7dd5067b8c1530a9f41c8ba82d0774eb48598da6",
+    "sha256": "4ca1ac7e3aeae287e44da8d74998f1d991c7d3d7f55b8762f5c13fd144d95a9a",
+    "file": "files/4ca1ac7e3aeae287e44da8d74998f1d991c7d3d7f55b8762f5c13fd144d95a9a.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": [
+      "https://doi.org/10.5063/schema/codemeta-2.0",
+      "http://schema.org",
+      "https://w3id.org/software-types",
+      "https://w3id.org/software-iodata"
+    ],
+    "json": "valid",
+    "compact": false,
+    "parse": "ok",
+    "error_position": null,
+    "version": "2.0",
+    "name": "Frog",
+    "diagnostics": [
+      {
+        "code": "unsupported_version",
+        "path": "@context",
+        "message": "context is not one of the pinned CodeMeta contexts",
+        "line": 2,
+        "column": 17
+      }
+    ],
+    "classification": "unsupported_version",
+    "reason": "The declared contexts include a context outside the pinned set."
+  },
+  {
+    "repository": "https://github.com/caltechlibrary/cl-pandoc-filters",
+    "path": "codemeta.json",
+    "commit": "0adce9b8e9acf0f7c9398a177855d3ad727fde24",
+    "blob": "0b9f9bee73a25e4d482a4d11d6d2b69003f6bc3f",
+    "sha256": "bd737a544a866e8a825c25813ee95888ffb6ad74d7eab8062812a47b50b593a9",
+    "file": "files/bd737a544a866e8a825c25813ee95888ffb6ad74d7eab8062812a47b50b593a9.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": "https://w3id.org/codemeta/3.0",
+    "json": "valid",
+    "compact": false,
+    "parse": "ok",
+    "error_position": null,
+    "version": "3.0",
+    "name": "CL-Pandoc-filters",
+    "diagnostics": [
+      {
+        "code": "unknown_term",
+        "path": "funder[0].ror",
+        "message": "term is not defined by the declared context",
+        "line": 37,
+        "column": 7
+      },
+      {
+        "code": "invalid_iri",
+        "path": "softwareRequirements[0]",
+        "message": "expected an IRI reference",
+        "line": 51,
+        "column": 5
+      },
+      {
+        "code": "invalid_iri",
+        "path": "softwareSuggestions[0]",
+        "message": "expected an IRI reference",
+        "line": 54,
+        "column": 5
+      },
+      {
+        "code": "invalid_iri",
+        "path": "softwareSuggestions[1]",
+        "message": "expected an IRI reference",
+        "line": 55,
+        "column": 5
+      },
+      {
+        "code": "value_type",
+        "path": "copyrightHolder",
+        "message": "expected Organization Person",
+        "line": 62,
+        "column": 22
+      }
+    ],
+    "classification": "unresolved",
+    "reason": "Retained for compatibility review; diagnostics describe range or context membership differences, without an upstream validity claim."
+  },
+  {
+    "repository": "https://github.com/sckott/spenv",
+    "path": "codemeta.json",
+    "commit": "08dff24765b859c8c9e3ea3f0806fd7724108485",
+    "blob": "a89f07d47e9d9c8b2a27e26210defe5ed286ae36",
+    "sha256": "c68995298e9878cd5866c8f087476c9ff42f14c9b7b8af11b5c711689bb230b6",
+    "file": "files/c68995298e9878cd5866c8f087476c9ff42f14c9b7b8af11b5c711689bb230b6.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": [
+      "http://purl.org/codemeta/2.0",
+      "http://schema.org"
+    ],
+    "json": "valid",
+    "compact": false,
+    "parse": "ok",
+    "error_position": null,
+    "version": "",
+    "name": "spenv: Add Environmental Data to Spatial Data",
+    "diagnostics": [
+      {
+        "code": "unsupported_version",
+        "path": "@context",
+        "message": "context is not one of the pinned CodeMeta contexts",
+        "line": 2,
+        "column": 15
+      }
+    ],
+    "classification": "unsupported_version",
+    "reason": "The declared contexts include a context outside the pinned set."
+  },
+  {
+    "repository": "https://github.com/caltechlibrary/ocr-plotting",
+    "path": "codemeta.json",
+    "commit": "a1eeb564eb993646a447702e7df3877dde11ccc2",
+    "blob": "b5cdebbb0823d5f1a1f3bb6084998dabdd460168",
+    "sha256": "da0d196ddd60ef4afb1bceaaaec3e324428728e0d72df5bed4eff2c74265a33a",
+    "file": "files/da0d196ddd60ef4afb1bceaaaec3e324428728e0d72df5bed4eff2c74265a33a.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "json": "valid",
+    "compact": false,
+    "parse": "ok",
+    "error_position": null,
+    "version": "2.0",
+    "name": "OCR Plotting",
+    "diagnostics": [
+      {
+        "code": "value_type",
+        "path": "author[0].affiliation",
+        "message": "expected Organization",
+        "line": 13,
+        "column": 22
+      },
+      {
+        "code": "value_type",
+        "path": "maintainer",
+        "message": "expected Person",
+        "line": 23,
+        "column": 17
+      }
+    ],
+    "classification": "unresolved",
+    "reason": "Retained for compatibility review; diagnostics describe range or context membership differences, without an upstream validity claim."
+  },
+  {
+    "repository": "https://github.com/caltechlibrary/sidewall",
+    "path": "codemeta.json",
+    "commit": "683b290e7a6d80aa531403ff00a97a45c6b95539",
+    "blob": "96845ad3e486a9591df6d4efa4b876c2a6803027",
+    "sha256": "8732720c13e407453e94749661c1b0465417fb642e8012f35c6b8b574da1d7e2",
+    "file": "files/8732720c13e407453e94749661c1b0465417fb642e8012f35c6b8b574da1d7e2.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "json": "valid",
+    "compact": false,
+    "parse": "ok",
+    "error_position": null,
+    "version": "2.0",
+    "name": "Sidewall",
+    "diagnostics": [
+      {
+        "code": "value_type",
+        "path": "author[0].affiliation",
+        "message": "expected Organization",
+        "line": 15,
+        "column": 22
+      },
+      {
+        "code": "value_type",
+        "path": "maintainer",
+        "message": "expected Person",
+        "line": 25,
+        "column": 17
+      }
+    ],
+    "classification": "unresolved",
+    "reason": "Retained for compatibility review; diagnostics describe range or context membership differences, without an upstream validity claim."
+  },
+  {
+    "repository": "https://github.com/shmercer/pairwisellm",
+    "path": "codemeta.json",
+    "commit": "565dad453407a84bdd31321a9f50bf0d067b9c91",
+    "blob": "943d44275d975ac7f15488d930b137e4e2ab7700",
+    "sha256": "d22386ef7999f640b3eabd5f670cdf46c4b2d495020b87930b6d7cccc3f66335",
+    "file": "files/d22386ef7999f640b3eabd5f670cdf46c4b2d495020b87930b6d7cccc3f66335.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "json": "valid",
+    "compact": false,
+    "parse": "ok",
+    "error_position": null,
+    "version": "2.0",
+    "name": "pairwiseLLM: Pairwise Comparison Tools for Large Language Model-Based Writing Evaluation",
+    "diagnostics": [
+      {
+        "code": "invalid_url",
+        "path": "identifier",
+        "message": "expected an absolute URL",
+        "line": 4,
+        "column": 17
+      },
+      {
+        "code": "unknown_type",
+        "path": "programmingLanguage.@type",
+        "message": "type is not defined by the declared context",
+        "line": 13,
+        "column": 14
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[0].identifier",
+        "message": "expected an absolute URL",
+        "line": 54,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[1].identifier",
+        "message": "expected an absolute URL",
+        "line": 66,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[2].identifier",
+        "message": "expected an absolute URL",
+        "line": 71,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[3].identifier",
+        "message": "expected an absolute URL",
+        "line": 83,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[4].identifier",
+        "message": "expected an absolute URL",
+        "line": 95,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[5].identifier",
+        "message": "expected an absolute URL",
+        "line": 107,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[6].identifier",
+        "message": "expected an absolute URL",
+        "line": 113,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[7].identifier",
+        "message": "expected an absolute URL",
+        "line": 125,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[8].identifier",
+        "message": "expected an absolute URL",
+        "line": 138,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[9].identifier",
+        "message": "expected an absolute URL",
+        "line": 150,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[10].identifier",
+        "message": "expected an absolute URL",
+        "line": 162,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[11].identifier",
+        "message": "expected an absolute URL",
+        "line": 174,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[12].identifier",
+        "message": "expected an absolute URL",
+        "line": 186,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[13].identifier",
+        "message": "expected an absolute URL",
+        "line": 192,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[14].identifier",
+        "message": "expected an absolute URL",
+        "line": 198,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[15].identifier",
+        "message": "expected an absolute URL",
+        "line": 210,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[16].identifier",
+        "message": "expected an absolute URL",
+        "line": 222,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[17].identifier",
+        "message": "expected an absolute URL",
+        "line": 228,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[18].identifier",
+        "message": "expected an absolute URL",
+        "line": 240,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[19].identifier",
+        "message": "expected an absolute URL",
+        "line": 252,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[20].identifier",
+        "message": "expected an absolute URL",
+        "line": 264,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[21].identifier",
+        "message": "expected an absolute URL",
+        "line": 277,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[22].identifier",
+        "message": "expected an absolute URL",
+        "line": 289,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[23].identifier",
+        "message": "expected an absolute URL",
+        "line": 301,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.1",
+        "message": "term is not defined by the declared context",
+        "line": 313,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.1.identifier",
+        "message": "expected an absolute URL",
+        "line": 315,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.2",
+        "message": "term is not defined by the declared context",
+        "line": 325,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.2.identifier",
+        "message": "expected an absolute URL",
+        "line": 327,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.3",
+        "message": "term is not defined by the declared context",
+        "line": 337,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.3.identifier",
+        "message": "expected an absolute URL",
+        "line": 339,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.4",
+        "message": "term is not defined by the declared context",
+        "line": 349,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.4.identifier",
+        "message": "expected an absolute URL",
+        "line": 351,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.5",
+        "message": "term is not defined by the declared context",
+        "line": 362,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.5.identifier",
+        "message": "expected an absolute URL",
+        "line": 364,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.6",
+        "message": "term is not defined by the declared context",
+        "line": 374,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.6.identifier",
+        "message": "expected an absolute URL",
+        "line": 376,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.7",
+        "message": "term is not defined by the declared context",
+        "line": 386,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.7.identifier",
+        "message": "expected an absolute URL",
+        "line": 388,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.8",
+        "message": "term is not defined by the declared context",
+        "line": 391,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.8.identifier",
+        "message": "expected an absolute URL",
+        "line": 393,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.9",
+        "message": "term is not defined by the declared context",
+        "line": 403,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.9.identifier",
+        "message": "expected an absolute URL",
+        "line": 405,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.10",
+        "message": "term is not defined by the declared context",
+        "line": 415,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.10.identifier",
+        "message": "expected an absolute URL",
+        "line": 417,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.11",
+        "message": "term is not defined by the declared context",
+        "line": 420,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.11.identifier",
+        "message": "expected an absolute URL",
+        "line": 422,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.12",
+        "message": "term is not defined by the declared context",
+        "line": 425,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.12.identifier",
+        "message": "expected an absolute URL",
+        "line": 427,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.SystemRequirements",
+        "message": "term is not defined by the declared context",
+        "line": 431,
+        "column": 5
+      }
+    ],
+    "classification": "unresolved",
+    "reason": "Retained for compatibility review; diagnostics describe range or context membership differences, without an upstream validity claim."
+  },
+  {
+    "repository": "https://github.com/ropensci-archive/scitations",
+    "path": "codemeta.json",
+    "commit": "17dda0a3d394af0c1f0434915985ea264202ca9a",
+    "blob": "9fe0b7f5c8b64db08a975e12be4216ea7beb7ac2",
+    "sha256": "2513632f3efc750260af6c6e9f9d5c7748a14cc0a087148c69c7a17107baa834",
+    "file": "files/2513632f3efc750260af6c6e9f9d5c7748a14cc0a087148c69c7a17107baa834.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": [
+      "http://purl.org/codemeta/2.0",
+      "http://schema.org"
+    ],
+    "json": "valid",
+    "compact": false,
+    "parse": "ok",
+    "error_position": null,
+    "version": "",
+    "name": "scitations: Bibliographic Citation Tools",
+    "diagnostics": [
+      {
+        "code": "unsupported_version",
+        "path": "@context",
+        "message": "context is not one of the pinned CodeMeta contexts",
+        "line": 2,
+        "column": 15
+      }
+    ],
+    "classification": "unsupported_version",
+    "reason": "The declared contexts include a context outside the pinned set."
+  },
+  {
+    "repository": "https://github.com/dataobservatory-eu/fscontext",
+    "path": "codemeta.json",
+    "commit": "f2e9bfa12707f391afac8ecf5c9f2919a05f852e",
+    "blob": "bf8f40044c53933a38b574097582793c09163b4c",
+    "sha256": "7b0b8c43eeb60f9d89601d44a5b489c15a1f0ff03e11754cecb8f2e916abe0f0",
+    "file": "files/7b0b8c43eeb60f9d89601d44a5b489c15a1f0ff03e11754cecb8f2e916abe0f0.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "json": "valid",
+    "compact": false,
+    "parse": "ok",
+    "error_position": null,
+    "version": "2.0",
+    "name": "fscontext: File System Contextualisation and Record Set Reconstruction",
+    "diagnostics": [
+      {
+        "code": "invalid_url",
+        "path": "identifier",
+        "message": "expected an absolute URL",
+        "line": 4,
+        "column": 17
+      },
+      {
+        "code": "unknown_type",
+        "path": "programmingLanguage.@type",
+        "message": "type is not defined by the declared context",
+        "line": 12,
+        "column": 14
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[0].identifier",
+        "message": "expected an absolute URL",
+        "line": 44,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[1].identifier",
+        "message": "expected an absolute URL",
+        "line": 56,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[2].identifier",
+        "message": "expected an absolute URL",
+        "line": 68,
+        "column": 21
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareSuggestions[3].identifier",
+        "message": "expected an absolute URL",
+        "line": 80,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.1",
+        "message": "term is not defined by the declared context",
+        "line": 93,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.1.identifier",
+        "message": "expected an absolute URL",
+        "line": 95,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.2",
+        "message": "term is not defined by the declared context",
+        "line": 105,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.2.identifier",
+        "message": "expected an absolute URL",
+        "line": 107,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.3",
+        "message": "term is not defined by the declared context",
+        "line": 117,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.3.identifier",
+        "message": "expected an absolute URL",
+        "line": 119,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.4",
+        "message": "term is not defined by the declared context",
+        "line": 129,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.4.identifier",
+        "message": "expected an absolute URL",
+        "line": 131,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.5",
+        "message": "term is not defined by the declared context",
+        "line": 141,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.5.identifier",
+        "message": "expected an absolute URL",
+        "line": 143,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.6",
+        "message": "term is not defined by the declared context",
+        "line": 146,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.6.identifier",
+        "message": "expected an absolute URL",
+        "line": 148,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.7",
+        "message": "term is not defined by the declared context",
+        "line": 158,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.7.identifier",
+        "message": "expected an absolute URL",
+        "line": 160,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.8",
+        "message": "term is not defined by the declared context",
+        "line": 170,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.8.identifier",
+        "message": "expected an absolute URL",
+        "line": 172,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.9",
+        "message": "term is not defined by the declared context",
+        "line": 182,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.9.identifier",
+        "message": "expected an absolute URL",
+        "line": 184,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.10",
+        "message": "term is not defined by the declared context",
+        "line": 187,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.10.identifier",
+        "message": "expected an absolute URL",
+        "line": 189,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.11",
+        "message": "term is not defined by the declared context",
+        "line": 192,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.11.identifier",
+        "message": "expected an absolute URL",
+        "line": 194,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.12",
+        "message": "term is not defined by the declared context",
+        "line": 204,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.12.identifier",
+        "message": "expected an absolute URL",
+        "line": 206,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.13",
+        "message": "term is not defined by the declared context",
+        "line": 216,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.13.identifier",
+        "message": "expected an absolute URL",
+        "line": 218,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.14",
+        "message": "term is not defined by the declared context",
+        "line": 228,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.14.identifier",
+        "message": "expected an absolute URL",
+        "line": 230,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.15",
+        "message": "term is not defined by the declared context",
+        "line": 240,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.15.identifier",
+        "message": "expected an absolute URL",
+        "line": 242,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.16",
+        "message": "term is not defined by the declared context",
+        "line": 252,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.16.identifier",
+        "message": "expected an absolute URL",
+        "line": 254,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.17",
+        "message": "term is not defined by the declared context",
+        "line": 264,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.17.identifier",
+        "message": "expected an absolute URL",
+        "line": 266,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.18",
+        "message": "term is not defined by the declared context",
+        "line": 276,
+        "column": 5
+      },
+      {
+        "code": "invalid_url",
+        "path": "softwareRequirements.18.identifier",
+        "message": "expected an absolute URL",
+        "line": 278,
+        "column": 21
+      },
+      {
+        "code": "unknown_term",
+        "path": "softwareRequirements.SystemRequirements",
+        "message": "term is not defined by the declared context",
+        "line": 282,
+        "column": 5
+      },
+      {
+        "code": "unknown_type",
+        "path": "citation[0].@type",
+        "message": "type is not defined by the declared context",
+        "line": 287,
+        "column": 16
+      }
+    ],
+    "classification": "unresolved",
+    "reason": "Retained for compatibility review; diagnostics describe range or context membership differences, without an upstream validity claim."
+  },
+  {
+    "repository": "https://github.com/sourmash-bio/sourmash",
+    "path": "codemeta.json",
+    "commit": "38d1f632ccdcbd28db87f528e345b8835634e655",
+    "blob": "0f92051a27259fb4566823b7fa376a14fc4b9e93",
+    "sha256": "4077c0fb4338deae1b08b8d347d48ab6d0fe0a3c5eaefccef3562363d9af25ac",
+    "file": "files/4077c0fb4338deae1b08b8d347d48ab6d0fe0a3c5eaefccef3562363d9af25ac.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": "https://raw.githubusercontent.com/mbjones/codemeta/master/codemeta.jsonld",
+    "json": "valid",
+    "compact": false,
+    "parse": "ok",
+    "error_position": null,
+    "version": "",
+    "name": "",
+    "diagnostics": [
+      {
+        "code": "unsupported_version",
+        "path": "@context",
+        "message": "context is not one of the pinned CodeMeta contexts",
+        "line": 2,
+        "column": 15
+      }
+    ],
+    "classification": "unsupported_version",
+    "reason": "The declared contexts include a context outside the pinned set."
+  },
+  {
+    "repository": "https://github.com/codemeta/codemeta-generator",
+    "path": "codemeta.json",
+    "commit": "082c4f184f4dd2d81eb889d582dc3eeb23b6ff1f",
+    "blob": "d4e7db8b44f083d451dd5fc7711244ef6ac1a471",
+    "sha256": "4a684282d2f28d3548806c83b4efd25d8e7cc783c287332d6058964ac6d5e742",
+    "file": "../comparisons/generator-self.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "json": "valid",
+    "compact": true,
+    "parse": "ok",
+    "error_position": null,
+    "version": "2.0",
+    "name": "CodeMeta Generator",
+    "diagnostics": [
+      {
+        "code": "term_version",
+        "path": "continuousIntegration",
+        "message": "term is not defined by the declared context",
+        "line": 8,
+        "column": 5
+      }
+    ],
+    "classification": "unresolved",
+    "reason": "Retained for compatibility review; diagnostics describe range or context membership differences, without an upstream validity claim."
+  },
+  {
+    "repository": "https://github.com/codemeta/codemeta",
+    "path": "codemeta.json",
+    "commit": "3657b0fa6c75cbf8e541ac1ab9af9acfb080f2c0",
+    "blob": "e8c461bd9502e559f1337cfe07a136a3e9ae4e51",
+    "sha256": "6e5b8c960632de3770a99a698cf4a7d17b55f41e5f302f5750ae6f22c9eef716",
+    "file": "../upstream/self-description.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": "https://w3id.org/codemeta/4.0",
+    "json": "valid",
+    "compact": true,
+    "parse": "ok",
+    "error_position": null,
+    "version": "",
+    "name": "CodeMeta: Minimal metadata schemas for science software and code, in JSON-LD",
+    "diagnostics": [
+      {
+        "code": "unsupported_version",
+        "path": "@context",
+        "message": "context is not one of the pinned CodeMeta contexts",
+        "line": 2,
+        "column": 15
+      }
+    ],
+    "classification": "unsupported_version",
+    "reason": "The declared contexts include a context outside the pinned set."
+  },
+  {
+    "repository": "https://github.com/apdavison/fairgraph",
+    "path": "codemeta.json",
+    "commit": "6b95fae2ab316b959a789c682abbef36332cf1a1",
+    "blob": "c09708630d34ea826756eca78c63883253a0535f",
+    "sha256": "2f612ba7bdbed222a2d58b9b18e6c467547dad51f12ee4e56413603d8d73e047",
+    "file": "files/2f612ba7bdbed222a2d58b9b18e6c467547dad51f12ee4e56413603d8d73e047.json",
+    "selected_from": "https://science.ecosyste.ms/projects/codemeta_csv",
+    "declared_context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "json": "valid",
+    "compact": true,
+    "parse": "ok",
+    "error_position": null,
+    "version": "2.0",
+    "name": "fairgraph",
+    "diagnostics": [
+      {
+        "code": "invalid_iri",
+        "path": "softwareRequirements[0]",
+        "message": "expected an IRI reference",
+        "line": 32,
+        "column": 5
+      }
+    ],
+    "classification": "unresolved",
+    "reason": "Retained for compatibility review; diagnostics describe range or context membership differences, without an upstream validity claim."
+  }
+]

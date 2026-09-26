@@ -1,0 +1,61 @@
+{
+    "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "@id": "https://github.com/stylescape/example-vite",
+    "@type": "SoftwareSourceCode",
+    "applicationCategory": "DeveloperApplication",
+    "applicationSubCategory": "Example Project",
+    "author": [
+        {
+            "@id": "https://orcid.org/0000-0002-8790-8630",
+            "@type": "Person",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "Scape Agency"
+            },
+            "email": "lars@scape.agency",
+            "familyName": "van Vianen",
+            "givenName": "Lars Bastiaan"
+        }
+    ],
+    "codeRepository": "https://github.com/stylescape/example-vite",
+    "contributor": [
+        {
+            "@type": "Organization",
+            "name": "Scape Agency"
+        }
+    ],
+    "copyrightHolder": {
+        "@type": "Organization",
+        "name": "Scape Agency"
+    },
+    "copyrightYear": 2024,
+    "dateCreated": "2024-08-01",
+    "dateModified": "2026-01-28",
+    "datePublished": "2024-08-01",
+    "description": "Stylescape example using Vite bundler",
+    "developmentStatus": "https://www.repostatus.org/#active",
+    "downloadUrl": "https://github.com/stylescape/example-vite/releases",
+    "identifier": "https://github.com/stylescape/example-vite",
+    "keywords": [
+        "stylescape",
+        "css",
+        "design-system",
+        "example",
+        "vite",
+        "bundler"
+    ],
+    "license": "https://spdx.org/licenses/MIT.html",
+    "name": "Stylescape Example for Vite",
+    "operatingSystem": "Any",
+    "programmingLanguage": [
+        "JavaScript",
+        "SCSS",
+        "HTML"
+    ],
+    "relatedLink": [
+        "https://github.com/stylescape/stylescape"
+    ],
+    "softwareRequirements": "Node.js >= 22.0.0",
+    "url": "https://github.com/stylescape/example-vite",
+    "version": "0.0.2"
+}

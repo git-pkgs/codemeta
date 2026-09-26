@@ -1,0 +1,75 @@
+[
+  {
+    "name": "missing-type",
+    "input": {
+      "@context": "https://w3id.org/codemeta/3.0",
+      "name": "Example"
+    },
+    "generator_valid": false,
+    "generator_messages": [
+      "Missing type (must be SoftwareSourceCode or SoftwareApplication)."
+    ],
+    "reason": "CodeMeta has no required properties.",
+    "expected_codes": [],
+    "classification": "deliberate_difference",
+    "reference_repository": "https://github.com/codemeta/codemeta-generator",
+    "reference_revision": "082c4f184f4dd2d81eb889d582dc3eeb23b6ff1f",
+    "reference_entrypoint": "js/validation/index.js:validateDocument"
+  },
+  {
+    "name": "impossible-date",
+    "input": {
+      "@context": "https://w3id.org/codemeta/3.0",
+      "@type": "SoftwareSourceCode",
+      "datePublished": "2023-02-29"
+    },
+    "generator_valid": true,
+    "generator_messages": [],
+    "reason": "Calendar validation rejects an impossible day that the generator accepts by spelling alone.",
+    "expected_codes": [
+      "invalid_date"
+    ],
+    "classification": "deliberate_difference",
+    "reference_repository": "https://github.com/codemeta/codemeta-generator",
+    "reference_revision": "082c4f184f4dd2d81eb889d582dc3eeb23b6ff1f",
+    "reference_entrypoint": "js/validation/index.js:validateDocument"
+  },
+  {
+    "name": "type-array",
+    "input": {
+      "@context": "https://w3id.org/codemeta/3.0",
+      "@type": [
+        "SoftwareSourceCode",
+        "SoftwareApplication"
+      ]
+    },
+    "generator_valid": false,
+    "generator_messages": [
+      "Wrong document type: must be \"SoftwareSourceCode\"/\"SoftwareApplication\", not [\"SoftwareSourceCode\",\"SoftwareApplication\"]"
+    ],
+    "reason": "JSON-LD permits multiple @type values. The generator requires one software type.",
+    "expected_codes": [],
+    "classification": "deliberate_difference",
+    "reference_repository": "https://github.com/codemeta/codemeta-generator",
+    "reference_revision": "082c4f184f4dd2d81eb889d582dc3eeb23b6ff1f",
+    "reference_entrypoint": "js/validation/index.js:validateDocument"
+  },
+  {
+    "name": "context-term",
+    "input": {
+      "@context": "https://w3id.org/codemeta/2.0",
+      "@type": "SoftwareSourceCode",
+      "schema:roleName": "developer"
+    },
+    "generator_valid": true,
+    "generator_messages": [],
+    "reason": "Pinned context membership reports later terms that the generator skips.",
+    "expected_codes": [
+      "term_version"
+    ],
+    "classification": "deliberate_difference",
+    "reference_repository": "https://github.com/codemeta/codemeta-generator",
+    "reference_revision": "082c4f184f4dd2d81eb889d582dc3eeb23b6ff1f",
+    "reference_entrypoint": "js/validation/index.js:validateDocument"
+  }
+]

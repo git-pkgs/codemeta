@@ -1,0 +1,335 @@
+{
+    "@context": [
+        "https:\/\/doi.org\/10.5063\/schema\/codemeta-2.0"
+    ],
+    "@type": "SoftwareSourceCode",
+    "name": "pipcore-mpu",
+    "description": "Pip-MPU is a project implementing the protokernel Pip on ARM Cortex-M devices having a Memory Protection Unit (MPU).\r\n\r\nPip is a protokernel: it allows for kernels, ranging from hypervisors to monolithic kernels, to be developped as user mode applications. Pip only provides system calls for managing isolated partitions of the memory and basic dealing of control flow, thus reducing the trusted computing base to its bare minimum.\r\n\r\nThe logic of Pip is implemented in Gallina - the language of the Coq proof assistant - and it is in the process of being equipped with a formal proof that it ensures memory isolation. For efficiency, it is automatically translated into freestanding C code.\r\n\r\nThe architecture-dependent part of Pip is implemented in C and assembly language. It consists of a thin layer giving access to the hardware.",
+    "dateCreated": "2021-02-03",
+    "datePublished": "2024-01-31",
+    "license": [
+        "https://spdx.org/licenses/CECILL-2.1"
+    ],
+    "url": "https:\/\/hal.science\/hal-04429589",
+    "identifier": [],
+    "applicationCategory": [
+        "info"
+    ],
+    "keywords": [
+        "Computer Science",
+        "Provable Security",
+        "Security",
+        "Formal Methods",
+        "Operating System",
+        "Internet of Things",
+        "IoT",
+        "Embedded system"
+    ],
+    "funder": [
+        {
+            "@type": "Organization",
+            "name": "MESRI"
+        },
+        {
+            "@type": "Organization",
+            "name": "BMBF"
+        },
+        {
+            "@type": "Organization",
+            "name": "ANR"
+        }
+    ],
+    "codeRepository": "https:\/\/github.com\/2xs\/pipcore-mpu",
+    "relatedLink": [
+        "https:\/\/pip.univ-lille.fr\/",
+        "https:\/\/anr.fr\/Projet-ANR-20-CYAL-0005",
+        "https:\/\/github.com\/2xs\/pipcore",
+        "https:\/\/github.com\/2xs\/dx",
+        "https:\/\/github.com\/2xs\/digger"
+    ],
+    "programmingLanguage": [
+        "Coq",
+        "C",
+        "Makefile",
+        "Shell"
+    ],
+    "runtimePlatform": [
+        "CoqIDE",
+        "Coq"
+    ],
+    "version": "1",
+    "softwareVersion": "1.0.0",
+    "dateModified": "2024-01-31",
+    "developmentStatus": "Actif",
+    "referencePublication": {
+        "hal": "hal-04185923,hal-03705114,tel-04093312,hal-03710419,hal-03679889,hal-03318078,hal-03102252,hal-03318088,hal-01819666"
+    },
+    "author": [
+        {
+            "@type": "Person",
+            "givenName": "Damien",
+            "familyName": "Amara",
+            "affiliation": [
+                {
+                    "@type": "Organization",
+                    "name": "Université de Lille"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "CRIStAL"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "2XS"
+                }
+            ]
+        },
+        {
+            "@type": "Person",
+            "givenName": "Quentin",
+            "familyName": "Bergougnoux",
+            "affiliation": [
+                {
+                    "@type": "Organization",
+                    "name": "Université de Lille"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "CRIStAL"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "2XS"
+                }
+            ]
+        },
+        {
+            "@type": "Person",
+            "givenName": "Julien",
+            "familyName": "Cartigny",
+            "affiliation": [
+                {
+                    "@type": "Organization",
+                    "name": "Université de Lille"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "CRIStAL"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "2XS"
+                }
+            ]
+        },
+        {
+            "@type": "Person",
+            "givenName": "Nicolas",
+            "familyName": "Dejon",
+            "affiliation": [
+                {
+                    "@type": "Organization",
+                    "name": "Orange Labs Caen"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "CRIStAL"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "2XS"
+                }
+            ]
+        },
+        {
+            "@type": "Person",
+            "givenName": "Gilles",
+            "familyName": "Grimaud",
+            "affiliation": [
+                {
+                    "@type": "Organization",
+                    "name": "Université de Lille"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "CRIStAL"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "2XS"
+                }
+            ]
+        },
+        {
+            "@type": "Person",
+            "givenName": "Micha\u00ebl",
+            "familyName": "Hauspie",
+            "affiliation": [
+                {
+                    "@type": "Organization",
+                    "name": "Université de Lille"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "CRIStAL"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "2XS"
+                }
+            ]
+        },
+        {
+            "@type": "Person",
+            "givenName": "\u00c9tienne",
+            "familyName": "Helluy-Lafont",
+            "affiliation": [
+                {
+                    "@type": "Organization",
+                    "name": "CNRS"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "CRIStAL"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "2XS"
+                }
+            ]
+        },
+        {
+            "@type": "Person",
+            "givenName": "Samuel",
+            "familyName": "Hym",
+            "affiliation": [
+                {
+                    "@type": "Organization",
+                    "name": "Université de Lille"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "CRIStAL"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "2XS"
+                }
+            ]
+        },
+        {
+            "@type": "Person",
+            "givenName": "Narjes",
+            "familyName": "Jomaa",
+            "affiliation": [
+                {
+                    "@type": "Organization",
+                    "name": "Université de Lille"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "CRIStAL"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "2XS"
+                }
+            ]
+        },
+        {
+            "@type": "Person",
+            "givenName": "David",
+            "familyName": "Nowak",
+            "affiliation": [
+                {
+                    "@type": "Organization",
+                    "name": "CNRS"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "CRIStAL"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "2XS"
+                }
+            ]
+        },
+        {
+            "@type": "Person",
+            "givenName": "Claire",
+            "familyName": "Soyez-Martin",
+            "affiliation": [
+                {
+                    "@type": "Organization",
+                    "name": "Université de Lille"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "CRIStAL"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "2XS"
+                }
+            ]
+        },
+        {
+            "@type": "Person",
+            "givenName": "Paolo",
+            "familyName": "Torrini",
+            "affiliation": [
+                {
+                    "@type": "Organization",
+                    "name": "Université de Lille"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "CRIStAL"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "2XS"
+                }
+            ]
+        },
+        {
+            "@type": "Person",
+            "givenName": "Florian",
+            "familyName": "Vanhems",
+            "affiliation": [
+                {
+                    "@type": "Organization",
+                    "name": "Université de Lille"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "CRIStAL"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "2XS"
+                }
+            ]
+        },
+        {
+            "@type": "Person",
+            "givenName": "Mahieddine",
+            "familyName": "Yaker",
+            "affiliation": [
+                {
+                    "@type": "Organization",
+                    "name": "Université de Lille"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "CRIStAL"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "2XS"
+                }
+            ]
+        }
+    ]
+}

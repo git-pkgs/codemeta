@@ -1,0 +1,46 @@
+{
+    "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "type": "SoftwareSourceCode",
+    "applicationCategory": "Intellectual_property",
+    "codeRepository": "git+https://github.com/damienbelveze/plagiator",
+    "contributor": {
+        "id": "https://orcid.org/0000-0001-9020-2148",
+        "type": "Person",
+        "affiliation": {
+            "type": "Organization",
+            "name": "University Library of Rennes"
+        },
+        "email": "belvezedamien@gmail.com",
+        "familyName": "Damien",
+        "givenName": "Belvèze"
+    },
+    "dateCreated": "2024-04-23",
+    "dateModified": "2024-04-23",
+    "datePublished": "2024-04-23",
+    "description": "Plagiator est une aventure construite avec Twine pour fournir un jeu sérieux sur le plagiat à des étudiants de Licence",
+    "downloadUrl": "https://github.com/damienbelveze/plagiator/archive/refs/heads/main.zip",
+    "funder": {
+        "type": "Organization",
+        "name": "ANR"
+    },
+    "identifier": "https://github.com/damienbelveze/plagiator",
+    "keywords": [
+        "plagiarism",
+        "citation"
+    ],
+    "license": "https://spdx.org/licenses/CC-BY-4.0",
+    "name": "Plagiator",
+    "operatingSystem": [
+        "Windows",
+        "Linux"
+    ],
+    "programmingLanguage": [
+        "SugarCube",
+        "CSS",
+        "Javascript"
+    ],
+    "version": "1.0",
+    "contIntegration": "https://github.com/damienbelveze/plagiator",
+    "funding": "Cursus Ideal",
+    "issueTracker": "https://github.com/damienbelveze/plagiator/issues"
+}

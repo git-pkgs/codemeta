@@ -1,0 +1,37 @@
+[
+  {
+    "file": "internal/contexts/2.0.jsonld",
+    "repository": "https://github.com/codemeta/codemeta",
+    "revision": "dbc58ffa8b088ae1b09ad335852d9767c402983d",
+    "path": "codemeta.jsonld",
+    "sha256": "12e26aedb8a179b9842fd755a48cf95c7ec5223db8505d6a243f90eba9f257f3"
+  },
+  {
+    "file": "internal/contexts/3.0.jsonld",
+    "repository": "https://github.com/codemeta/codemeta",
+    "revision": "19a4de2deb55ab7c907984bc9333f45eb5f50412",
+    "path": "codemeta.jsonld",
+    "sha256": "ecf6cfff1f701f5b6b188b9925707c44e6c86134f47aecc6663baf7f6757473f"
+  },
+  {
+    "file": "internal/contexts/master.jsonld",
+    "repository": "https://github.com/codemeta/codemeta",
+    "revision": "3657b0fa6c75cbf8e541ac1ab9af9acfb080f2c0",
+    "path": "codemeta.jsonld",
+    "sha256": "cdafe797a504eb83a55cb7da5905be009ca74aef5ec29e66448f3da54855f55b"
+  },
+  {
+    "file": "internal/contexts/properties_description.csv",
+    "repository": "https://github.com/codemeta/codemeta",
+    "revision": "3657b0fa6c75cbf8e541ac1ab9af9acfb080f2c0",
+    "path": "properties_description.csv",
+    "sha256": "fcf0dffab1d3e269700d934caa5b5b35286ffec803d46f442588f7539351b8d0"
+  },
+  {
+    "file": "internal/contexts/LICENSE",
+    "repository": "https://github.com/codemeta/codemeta",
+    "revision": "3657b0fa6c75cbf8e541ac1ab9af9acfb080f2c0",
+    "path": "LICENSE",
+    "sha256": "a8ad31b1c3f40dca5a84119351b8fa8ddc868edd77fad8a8ebf6d8f2d16fa4ae"
+  }
+]

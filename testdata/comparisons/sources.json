@@ -1,0 +1,26 @@
+[
+  {
+    "file": "codemetar-example.json",
+    "repository": "https://github.com/ropensci/codemetar",
+    "revision": "3d98aaa481e9b569f4687b9063e8f88d2320988c",
+    "path": "inst/examples/codemeta.json",
+    "blob": "22ed65c72f0bd9cf5978172660fbde6a00eee4fa",
+    "sha256": "3edd585ef7fd6db203a2aa73144ee2d97e10058edd95251f660c0b8496aafda2"
+  },
+  {
+    "file": "codemetar-self.json",
+    "repository": "https://github.com/ropensci/codemetar",
+    "revision": "3d98aaa481e9b569f4687b9063e8f88d2320988c",
+    "path": "inst/codemeta.json",
+    "blob": "daa14c7cfbe02a9630e8073d83f6d6eab7babd29",
+    "sha256": "2223dbfbed3f71505f6d348a42b7e83a490d11263520657a0ce013fae8bc169b"
+  },
+  {
+    "file": "generator-self.json",
+    "repository": "https://github.com/codemeta/codemeta-generator",
+    "revision": "082c4f184f4dd2d81eb889d582dc3eeb23b6ff1f",
+    "path": "codemeta.json",
+    "blob": "d4e7db8b44f083d451dd5fc7711244ef6ac1a471",
+    "sha256": "4a684282d2f28d3548806c83b4efd25d8e7cc783c287332d6058964ac6d5e742"
+  }
+]

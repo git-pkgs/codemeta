@@ -1,0 +1,530 @@
+{
+    "@context": [
+        "https://doi.org/10.5063/schema/codemeta-2.0",
+        "http://schema.org",
+        "https://w3id.org/software-types",
+        "https://w3id.org/software-iodata"
+    ],
+    "@type": "SoftwareSourceCode",
+    "identifier": "ucto",
+    "name": "ucto",
+    "version": "0.37",
+    "description": "Ucto tokenizes text files: it separates words from punctuation, and splits sentences. This is one of the first tasks for almost any Natural Language Processing application. Ucto offers several other basic preprocessing steps such as changing case that you can all use to make your text suited for further processing such as indexing, part-of-speech tagging, or machine translation.",
+    "license": "https://spdx.org/licenses/GPL-3.0-only",
+	"url": "https://languagemachines.github.io/ucto",
+    "thumbnailUrl": "https://raw.githubusercontent.com/LanguageMachines/ucto/master/logo.svg",
+    "producer": {
+        "@id": "https://huc.knaw.nl",
+        "@type": "Organization",
+        "name": "KNAW Humanities Cluster",
+        "url": "https://huc.knaw.nl",
+        "parentOrganization": {
+            "@id": "https://knaw.nl",
+            "@type": "Organization",
+            "name": "KNAW",
+            "url": "https://knaw.nl",
+            "location": {
+                "@type": "Place",
+                "name": "Amsterdam"
+            }
+        }
+    },
+    "author": [
+		{
+			"@id": "https://orcid.org/0000-0002-1046-0006",
+			"@type": "Person",
+			"givenName": "Maarten",
+			"familyName": "van Gompel",
+			"email": "proycon@anaproy.nl",
+			"affiliation": { "@id": "https://huc.knaw.nl" }
+		},
+		{
+			"@type": "Person",
+			"givenName": "Ko",
+			"familyName": "van der Sloot",
+			"email": "ko.vandersloot@let.ru.nl",
+			"affiliation": {
+                "@id": "https://www.ru.nl/clst",
+                "@type": "Organization",
+                "name": "Centre for Language and Speech Technology",
+                "url": "https://www.ru.nl/clst",
+                "parentOrganization": {
+                    "@id": "https://www.ru.nl/cls",
+                    "@type": "Organization",
+                    "name": "Centre for Language Studies",
+                    "url": "https://www.ru.nl/cls",
+                    "parentOrganization": {
+                        "@id": "https://www.ru.nl",
+                        "name": "Radboud University",
+                        "@type": "Organization",
+                        "url": "https://www.ru.nl",
+                        "location": {
+                            "@type": "Place",
+                            "name": "Nijmegen"
+                        }
+                    }
+                }
+            }
+		}
+	],
+	"programmingLanguage": {
+		"@type": "ComputerLanguage",
+		"identifier": "c++",
+		"name": "C++"
+	},
+	"operatingSystem": [ "Linux", "BSD", "macOS" ],
+	"codeRepository": "https://github.com/LanguageMachines/ucto",
+    "softwareRequirements": [
+        {
+			"@type": "SoftwareApplication",
+			"identifier": "icu",
+			"name": "icu"
+		},
+        {
+			"@type": "SoftwareApplication",
+			"identifier": "libxml2",
+			"name": "libxml2"
+		},
+        {
+			"@type": "SoftwareApplication",
+			"identifier": "ticcutils",
+			"name": "ticcutils"
+		},
+        {
+			"@type": "SoftwareApplication",
+			"identifier": "libfolia",
+			"name": "libfolia"
+		}
+	],
+	"funding": [
+		{
+			"@type": "Grant",
+			"name": "CLARIN-NL (NWO grant 184.021.003)",
+			"url": "https://www.clariah.nl",
+            "funder": {
+                "@type": "Organization",
+                "name": "NWO",
+                "url": "https://www.nwo.nl"
+            }
+		},
+		{
+			"@type": "Grant",
+			"name": "CLARIAH-CORE (NWO grant 184.033.101)",
+			"url": "https://www.clariah.nl",
+            "funder": {
+                "@type": "Organization",
+                "name": "NWO",
+                "url": "https://www.nwo.nl"
+            }
+        },
+        {
+            "@type": "Grant",
+            "name": "CLARIAH-PLUS (NWO grant 184.034.023)",
+            "funder": {
+                "@type": "Organization",
+                "name": "NWO",
+                "url": "https://www.nwo.nl"
+            }
+        }
+	],
+	"readme": "https://github.com/LanguageMachines/ucto/blob/master/README.md",
+    "softwareHelp": [
+        {
+            "@id": "https://ucto.readthedocs.io",
+            "@type": "WebSite",
+            "name": "Ucto documentation",
+            "url": "https://ucto.readthedocs.io"
+        }
+    ],
+	"issueTracker": "https://github.com/LanguageMachines/ucto/issues",
+	"contIntegration": "https://github.com/LanguageMachines/ucto/actions/workflows/ucto.yml",
+	"releaseNotes": "https://github.com/LanguageMachines/ucto/releases",
+	"developmentStatus": [ "https://www.repostatus.org/#active", "https://w3id.org/research-technology-readiness-levels#Level9Proven" ],
+	"keywords":  [ "nlp", "natural language processing", "tokenization", "tokenizer" ],
+	"dateCreated": "2011-03-27",
+    "dateModified": "2026-08-20T11:32:18Z+0200",
+    "applicationCategory": [ "https://vocabs.dariah.eu/tadirah/annotating", "https://vocabs.dariah.eu/tadirah/tagging", "https://w3id.org/nwo-research-fields#Linguistics", "https://w3id.org/nwo-research-fields#TextualAndContentAnalysis" ],
+    "targetProduct": [
+        {
+            "@type": "SoftwareLibrary",
+            "executableName": "libucto",
+            "name": "libucto",
+            "runtimePlatform": [ "Linux", "BSD", "macOS" ],
+            "description": "Ucto Library with API for C++"
+        },
+        {
+            "@type": "CommandLineApplication",
+            "executableName": "ucto",
+            "name": "ucto",
+            "runtimePlatform": [ "Linux", "BSD", "macOS" ],
+            "description": "Command-line interface to the tokenizer",
+            "consumesData": [
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "text/plain",
+                    "inLanguage": [
+                        {
+                            "@id": "https://iso639-3.sil.org/code/nld",
+                            "@type": "Language",
+                            "name": "Dutch",
+                            "identifier": "nld"
+                        }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "text/plain",
+                    "inLanguage": [
+                        {
+                            "@id": "https://iso639-3.sil.org/code/eng",
+                            "@type": "Language",
+                            "name": "English",
+                            "identifier": "eng"
+                        }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "text/plain",
+                    "inLanguage": [
+                        {
+                            "@id": "https://iso639-3.sil.org/code/ita",
+                            "@type": "Language",
+                            "name": "Italian",
+                            "identifier": "ita"
+                        }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "text/plain",
+                    "inLanguage": [
+                        {
+                            "@id": "https://iso639-3.sil.org/code/fra",
+                            "@type": "Language",
+                            "name": "French",
+                            "identifier": "fra"
+                        }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "text/plain",
+                    "inLanguage": [
+                        {
+                            "@id": "https://iso639-3.sil.org/code/spa",
+                            "@type": "Language",
+                            "name": "Spanish",
+                            "identifier": "spa"
+                        }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "text/plain",
+                    "inLanguage": [
+                        {
+                            "@id": "https://iso639-3.sil.org/code/por",
+                            "@type": "Language",
+                            "name": "Portuguese",
+                            "identifier": "por"
+                        }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "text/plain",
+                    "inLanguage": [
+                        {
+                            "@id": "https://iso639-3.sil.org/code/deu",
+                            "@type": "Language",
+                            "name": "German",
+                            "identifier": "deu"
+                        }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "text/plain",
+                    "inLanguage": [
+                        {
+                            "@id": "https://iso639-3.sil.org/code/fry",
+                            "@type": "Language",
+                            "name": "Frisian",
+                            "identifier": "fry"
+                        }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "text/plain",
+                    "inLanguage": [
+                        {
+                            "@id": "https://iso639-3.sil.org/code/swe",
+                            "@type": "Language",
+                            "name": "Swedish",
+                            "identifier": "swe"
+                        }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "text/plain",
+                    "inLanguage": [
+                        {
+                            "@id": "https://iso639-3.sil.org/code/rus",
+                            "@type": "Language",
+                            "name": "Russian",
+                            "identifier": "rus"
+                        }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "text/plain",
+                    "inLanguage": [
+                        {
+                            "@id": "https://iso639-3.sil.org/code/tur",
+                            "@type": "Language",
+                            "name": "Turkish",
+                            "identifier": "tur"
+                        }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "application/folia+xml",
+                    "inLanguage": [
+                        { "@id": "https://iso639-3.sil.org/code/nld" }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "application/folia.xml",
+                    "inLanguage": [
+                        { "@id": "https://iso639-3.sil.org/code/eng" }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "application/folia.xml",
+                    "inLanguage": [
+                        { "@id": "https://iso639-3.sil.org/code/ita" }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "application/folia+xml",
+                    "inLanguage": [
+                        { "@id": "https://iso639-3.sil.org/code/fra" }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "application/folia+xml",
+                    "inLanguage": [
+                        { "@id": "https://iso639-3.sil.org/code/spa" }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "application/folia.xml",
+                    "inLanguage": [
+                        { "@id": "https://iso639-3.sil.org/code/por" }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "application/folia.xml",
+                    "inLanguage": [
+                        { "@id": "https://iso639-3.sil.org/code/deu" }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "application/folia.xml",
+                    "inLanguage": [
+                        { "@id": "https://iso639-3.sil.org/code/fry" }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "application/folia.xml",
+                    "inLanguage": [
+                        { "@id": "https://iso639-3.sil.org/code/swe" }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "application/folia.xml",
+                    "inLanguage": [
+                        { "@id": "https://iso639-3.sil.org/code/rus" }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "application/folia.xml",
+                    "inLanguage": [
+                        { "@id": "https://iso639-3.sil.org/code/tur" }
+                    ]
+                }
+            ],
+            "producesData": [
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "text/plain",
+                    "inLanguage": [
+                        { "@id": "https://iso639-3.sil.org/code/nld" }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "text/plain",
+                    "inLanguage": [
+                        { "@id": "https://iso639-3.sil.org/code/eng" }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "text/plain",
+                    "inLanguage": [
+                        { "@id": "https://iso639-3.sil.org/code/ita" }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "text/plain",
+                    "inLanguage": [
+                        { "@id": "https://iso639-3.sil.org/code/fra" }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "text/plain",
+                    "inLanguage": [
+                        { "@id": "https://iso639-3.sil.org/code/spa" }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "text/plain",
+                    "inLanguage": [
+                        { "@id": "https://iso639-3.sil.org/code/por" }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "text/plain",
+                    "inLanguage": [
+                        { "@id": "https://iso639-3.sil.org/code/deu" }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "text/plain",
+                    "inLanguage": [
+                        { "@id": "https://iso639-3.sil.org/code/fry" }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "text/plain",
+                    "inLanguage": [
+                        { "@id": "https://iso639-3.sil.org/code/swe" }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "text/plain",
+                    "inLanguage": [
+                        { "@id": "https://iso639-3.sil.org/code/rus" }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "text/plain",
+                    "inLanguage": [
+                        { "@id": "https://iso639-3.sil.org/code/tur" }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "application/folia+xml",
+                    "inLanguage": [
+                        { "@id": "https://iso639-3.sil.org/code/nld" }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "application/folia.xml",
+                    "inLanguage": [
+                        { "@id": "https://iso639-3.sil.org/code/eng" }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "application/folia.xml",
+                    "inLanguage": [
+                        { "@id": "https://iso639-3.sil.org/code/ita" }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "application/folia+xml",
+                    "inLanguage": [
+                        { "@id": "https://iso639-3.sil.org/code/fra" }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "application/folia+xml",
+                    "inLanguage": [
+                        { "@id": "https://iso639-3.sil.org/code/spa" }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "application/folia.xml",
+                    "inLanguage": [
+                        { "@id": "https://iso639-3.sil.org/code/por" }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "application/folia.xml",
+                    "inLanguage": [
+                        { "@id": "https://iso639-3.sil.org/code/deu" }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "application/folia.xml",
+                    "inLanguage": [
+                        { "@id": "https://iso639-3.sil.org/code/fry" }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "application/folia.xml",
+                    "inLanguage": [
+                        { "@id": "https://iso639-3.sil.org/code/swe" }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "application/folia.xml",
+                    "inLanguage": [
+                        { "@id": "https://iso639-3.sil.org/code/rus" }
+                    ]
+                },
+                {
+                    "@type": "TextDigitalDocument",
+                    "encodingFormat": "application/folia.xml",
+                    "inLanguage": [
+                        { "@id": "https://iso639-3.sil.org/code/tur" }
+                    ]
+                }
+            ]
+        }
+    ]
+}

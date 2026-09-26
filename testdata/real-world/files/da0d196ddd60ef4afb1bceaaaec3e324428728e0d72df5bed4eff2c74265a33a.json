@@ -1,0 +1,25 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "description": "Plots of OCR quality.",
+  "name": "OCR Plotting",
+  "codeRepository": "https://github.com/caltechlibrary/ocr-plotting",
+  "license": "https://data.caltech.edu/license",
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Thomas E",
+      "familyName": "Morrell",
+      "affiliation": "Caltech Library",
+      "email": "tmorrell@caltech.edu",
+      "@id": "https://orcid.org/0000-0001-9266-5146"
+    }],
+  "developmentStatus": "active",
+  "keywords": [
+    "GitHub",
+    "plotting",
+    "OCR"
+  ],
+  "maintainer": "https://orcid.org/0000-0001-9266-5146",
+  "programmingLanguage": "Python"
+}

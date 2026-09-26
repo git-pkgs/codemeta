@@ -1,0 +1,14 @@
+The manifests pin copied CodeMeta files to their source revisions and byte hashes.
+The codemeta-generator source is licensed under AGPL-3.0-or-later; its license is
+in COPYING.generator. The codemetar source declares GPL-3 in DESCRIPTION; its
+license text is in COPYING.codemetar. Original authors retain ownership.
+
+The four inputs in differences.json were constructed for this library. Reference
+results were measured by running validateDocument from the pinned JavaScript
+generator, with setError replaced by a message collector. No form preprocessing
+was applied. These are validator comparisons, not JSON-LD conformance results.
+
+The two codemetar fixtures are copied outputs, not a claim that the R generator
+was rerun. They retain its scalar programmingLanguage object, agent arrays,
+identifier text, and nested software dependency objects. Their metadata and
+expected diagnostics are tested independently from parsing.

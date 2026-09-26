@@ -1,0 +1,58 @@
+[
+  {
+    "file": "codemeta-software.json",
+    "repository": "https://github.com/codemeta/codemeta",
+    "revision": "3657b0fa6c75cbf8e541ac1ab9af9acfb080f2c0",
+    "path": "examples/codemeta-software.json",
+    "blob": "113f6dfece276a141d8f6fa94b410c570afcd67f",
+    "sha256": "94bda7cab919b0830937b5d6f0a5290dceb99343eb68fa0fb429496417d12f21"
+  },
+  {
+    "file": "codemeta.json",
+    "repository": "https://github.com/codemeta/codemeta",
+    "revision": "3657b0fa6c75cbf8e541ac1ab9af9acfb080f2c0",
+    "path": "examples/codemeta.json",
+    "blob": "40780448decd1815e8fb7bf6234f1cd3cbfcdcca",
+    "sha256": "ff4bc0d4c3c596c8644959054664665d3fd5cdd86c556093ad29a9151409ae2f"
+  },
+  {
+    "file": "example-code-jsonld.json",
+    "repository": "https://github.com/codemeta/codemeta",
+    "revision": "3657b0fa6c75cbf8e541ac1ab9af9acfb080f2c0",
+    "path": "examples/example-code-jsonld.json",
+    "blob": "9adf5ca33a0bf1c95d916fb9b02577215c54765f",
+    "sha256": "5cfa42530514cf47a878a63965559739d97afa402a70cac343068d55e8ea23e8"
+  },
+  {
+    "file": "example-codemeta-invalid.json",
+    "repository": "https://github.com/codemeta/codemeta",
+    "revision": "3657b0fa6c75cbf8e541ac1ab9af9acfb080f2c0",
+    "path": "examples/example-codemeta-invalid.json",
+    "blob": "a5ed5f2143a4282c7706a594ab2a67d7eb6ea731",
+    "sha256": "4ae94866970548196f0c3b9fb119809610fcc701fd9e5add3d480a27035ab2c3"
+  },
+  {
+    "file": "schema-org-codemeta.json",
+    "repository": "https://github.com/codemeta/codemeta",
+    "revision": "3657b0fa6c75cbf8e541ac1ab9af9acfb080f2c0",
+    "path": "examples/schema-org-codemeta.json",
+    "blob": "ba1b662196af2d6a5b07f5ad973cc3a90a4e3c50",
+    "sha256": "4c476021244985c6f8f7881af7595fd85d220d13638dcfdf5752fe98fa585675"
+  },
+  {
+    "file": "self-description.json",
+    "repository": "https://github.com/codemeta/codemeta",
+    "revision": "3657b0fa6c75cbf8e541ac1ab9af9acfb080f2c0",
+    "path": "codemeta.json",
+    "blob": "e8c461bd9502e559f1337cfe07a136a3e9ae4e51",
+    "sha256": "6e5b8c960632de3770a99a698cf4a7d17b55f41e5f302f5750ae6f22c9eef716"
+  },
+  {
+    "file": "../../internal/contexts/master.jsonld",
+    "repository": "https://github.com/codemeta/codemeta",
+    "revision": "3657b0fa6c75cbf8e541ac1ab9af9acfb080f2c0",
+    "path": "codemeta.jsonld",
+    "blob": "45c6fd0e564ce80f2f250e324cf3ccc8a83582e0",
+    "sha256": "cdafe797a504eb83a55cb7da5905be009ca74aef5ec29e66448f3da54855f55b"
+  }
+]

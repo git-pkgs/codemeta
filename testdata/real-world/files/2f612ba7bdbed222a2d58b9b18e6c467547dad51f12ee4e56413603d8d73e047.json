@@ -1,0 +1,115 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "license": "https://spdx.org/licenses/Apache-2.0.html",
+  "codeRepository": "https://github.com/HumanBrainProject/fairgraph",
+  "contIntegration": "https://github.com/HumanBrainProject/fairgraph/actions",
+  "dateModified": "2026-09-15",
+  "downloadUrl": "https://files.pythonhosted.org/packages/e9/b3/5492b6c00680746e1f3acba2ccee8b97368daf18896af434434a5f622e64/fairgraph-0.15.0.tar.gz",
+  "issueTracker": "https://github.com/HumanBrainProject/fairgraph/issues",
+  "name": "fairgraph",
+  "version": "0.15.0",
+  "identifier": "https://pypi.org/project/fairgraph/0.15.0/",
+  "description": "Python API for the EBRAINS Knowledge Graph",
+  "applicationCategory": "neuroscience",
+  "releaseNotes": "https://fairgraph.readthedocs.io/en/latest/release_notes.html#version-0-15-0",
+  "funding": "https://cordis.europa.eu/project/id/945539",
+  "developmentStatus": "active",
+  "referencePublication": null,
+  "funder": {
+    "@type": "Organization",
+    "name": "European Commission"
+  },
+  "programmingLanguage": [
+    "Python"
+  ],
+  "operatingSystem": [
+    "Linux",
+    "Windows",
+    "macOS"
+  ],
+  "softwareRequirements": [
+    "Python >=3.9",
+    "ebrains-kg-core>=0.9.20",
+    "openminds>=0.6.1",
+    "python-dateutil>=2.0",
+    "tabulate>=0.8.0",
+    "requests>=2.20.0"
+  ],
+  "relatedLink": [
+    "https://fairgraph.readthedocs.io"
+  ],
+  "author": [
+    {
+      "@type": "Person",
+      "@id": "http://orcid.org/0000-0002-4793-7541",
+      "givenName": "Andrew P.",
+      "familyName": "Davison",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/002v40q27"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "givenName": "Onur",
+      "familyName": "Ates",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/002v40q27"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "givenName": "Yann",
+      "familyName": "Zerlaut",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/002v40q27"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "givenName": "Nico",
+      "familyName": "Feld",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02778hg05"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "givenName": "Glynis",
+      "familyName": "Mattheisen",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/002v40q27"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "givenName": "Peyman",
+      "familyName": "Najafi",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/002v40q27"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://github.com/mikemikimike",
+      "affiliation": [
+        {
+          "name": "Independent contributor"
+        }
+      ],
+      "name": "@mikemikimike"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+Sources were selected from https://science.ecosyste.ms/projects/codemeta_csv on
+2026-09-26. The listing contained 1,936 repository URL and file path pairs.
+Selection took the first six rows and every 64th row, followed by targeted
+CodeMeta, generator, sourmash, and fairgraph sources. Missing files are recorded
+in acquisition-failures.json, rather than excluded from the acquisition record.
+
+Each occurrence records its repository, source path, commit, blob ID, and SHA-256.
+Files are copied without changes. Equal byte sequences share one local fixture,
+including matches with the upstream and comparison corpora. Original authors
+retain ownership; each source repository provides its licensing terms.
+
+Fourteen occurrences run in the compact corpus. CODEMETA_CORPUS=all includes
+all occurrences. The sample includes context versions 2.0, 3.0, and master;
+unsupported and mixed contexts; Role wrappers; scalar agents; non-ASCII names;
+nested dependency objects; and malformed JSON. No cached science file matched
+a literal root-graph key search. The pinned upstream context supplies a real
+root-graph document, with synthetic cases covering graph traversal separately.
+
+Parse outcomes are separate from context detection and diagnostics. Metadata is
+compared against encoding/json with UseNumber, and original bytes are checked
+against their hashes. Unresolved classifications identify cases whose reported
+range or context differences have not established upstream invalidity. They do
+not label every file with a diagnostic invalid. Malformed JSON was also rejected
+by Ruby's JSON parser. Defaults accommodate the acquired sample without resource
+or diagnostic truncation.

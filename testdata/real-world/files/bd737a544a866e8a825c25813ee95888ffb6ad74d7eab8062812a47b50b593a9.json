@@ -1,0 +1,63 @@
+{
+  "@context": "https://w3id.org/codemeta/3.0",
+  "type": "SoftwareSourceCode",
+  "codeRepository": "https://github.com/caltechlibrary/CL-Pandoc-filters",
+  "author": [
+    {
+      "id": "https://orcid.org/0000-0003-0900-6903",
+      "type": "Person",
+      "givenName": "R. S.",
+      "familyName": "Doiel",
+      "email": "rsdoiel@caltech.edu"
+    },
+    {
+      "id": "https://orcid.org/0000-0001-5644-440X",
+      "type": "Person",
+      "givenName": "Tommy",
+      "familyName": "Keswick",
+      "email": "tkeswick@caltech.edu"
+    }
+  ],
+  "maintainer": [
+    {
+      "id": "https://orcid.org/0000-0003-0900-6903",
+      "type": "Person",
+      "givenName": "R. S.",
+      "familyName": "Doiel",
+      "email": "rsdoiel@caltech.edu"
+    }
+  ],
+  "dateCreated": "2025-06-17",
+  "dateModified": "2025-06-17",
+  "datePublished": "2025-06-17",
+  "description": "This is a repository for Pandoc Filters used by Caltech Library's Digital Repository Development Group.",
+  "funder": [
+    {
+      "name": "Caltech Library",
+      "ror": "https://ror.org/05dxps055"
+    }
+  ],
+  "keywords": [
+    "Pandoc",
+    "Filters"
+  ],
+  "name": "CL-Pandoc-filters",
+  "license": "https://github.com/caltechlibrary/CL-Pandoc-filters/blob/main/LICENSE",
+  "programmingLanguage": [
+    "Lua"
+  ],
+  "runtimePlatform": "Pandoc",
+  "softwareRequirements": [
+    "Pandoc >= 3.9"
+  ],
+  "softwareSuggestions": [
+    "CMTools >= 0.0.43",
+    "GNU Make >= 3.8"
+  ],
+  "version": "0.0.1",
+  "developmentStatus": "concept",
+  "issueTracker": "https://github.com/caltechlibrary/CL-Pandoc-filters/issues",
+  "releaseNotes": "This is start of a collection of Pandoc Filters to support DLD groups documentation efforts.",
+  "copyrightYear": 2025,
+  "copyrightHolder": "California Institute of Technology"
+}
