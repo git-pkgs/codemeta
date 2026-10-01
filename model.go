@@ -1,6 +1,8 @@
 package codemeta
 
-func (d *Document) Name() string                { return d.Get("name").Text() }
+const nameTerm = "name"
+
+func (d *Document) Name() string                { return d.Get(nameTerm).Text() }
 func (d *Document) Description() string         { return d.Get("description").Text() }
 func (d *Document) CodeRepository() Value       { return d.Get("codeRepository") }
 func (d *Document) SoftwareVersion() Value      { return d.Get("version") }
@@ -39,7 +41,7 @@ type Agent struct {
 
 func (a Agent) Value() Value          { return a.value }
 func (a Agent) Get(term string) Value { return resolvedGet(a.value, term, a.terms) }
-func (a Agent) Name() string          { return a.Get("name").Text() }
+func (a Agent) Name() string          { return a.Get(nameTerm).Text() }
 func (a Agent) GivenName() string     { return a.Get("givenName").Text() }
 func (a Agent) FamilyName() string    { return a.Get("familyName").Text() }
 func (a Agent) RoleName() Value       { return a.Get("roleName") }
@@ -72,7 +74,7 @@ func (a Agent) Kind() AgentKind {
 	if personType {
 		return AgentPerson
 	}
-	if orgType || a.Get("name").kind != Missing {
+	if orgType || a.Get(nameTerm).kind != Missing {
 		return AgentOrganization
 	}
 	return AgentUnknown
