@@ -2,8 +2,8 @@ package codemeta
 
 const nameTerm = "name"
 
-func (d *Document) Name() string                { return d.Get(nameTerm).Text() }
-func (d *Document) Description() string         { return d.Get("description").Text() }
+func (d *Document) Name() string                { return firstString(d.Strings(nameTerm)) }
+func (d *Document) Description() string         { return firstString(d.Strings("description")) }
 func (d *Document) CodeRepository() Value       { return d.Get("codeRepository") }
 func (d *Document) SoftwareVersion() Value      { return d.Get("version") }
 func (d *Document) License() Value              { return d.Get("license") }
@@ -41,11 +41,16 @@ type Agent struct {
 
 func (a Agent) Value() Value          { return a.value }
 func (a Agent) Get(term string) Value { return resolvedGet(a.value, term, a.terms) }
-func (a Agent) Name() string          { return a.Get(nameTerm).Text() }
-func (a Agent) GivenName() string     { return a.Get("givenName").Text() }
-func (a Agent) FamilyName() string    { return a.Get("familyName").Text() }
-func (a Agent) RoleName() Value       { return a.Get("roleName") }
-func (a Agent) Identifier() Value     { return a.Get(keywordID) }
+func (a Agent) Name() string {
+	if a.value.kind == String {
+		return a.value.Text()
+	}
+	return firstString(a.Strings(nameTerm))
+}
+func (a Agent) GivenName() string  { return firstString(a.Strings("givenName")) }
+func (a Agent) FamilyName() string { return firstString(a.Strings("familyName")) }
+func (a Agent) RoleName() Value    { return a.Get("roleName") }
+func (a Agent) Identifier() Value  { return a.Get(keywordID) }
 func (a Agent) Kind() AgentKind {
 	if a.value.kind == String {
 		return AgentText
@@ -53,13 +58,13 @@ func (a Agent) Kind() AgentKind {
 	if a.value.kind != Object {
 		return AgentUnknown
 	}
-	person := a.Get("givenName").kind != Missing || a.Get("familyName").kind != Missing || a.Get("affiliation").kind != Missing
-	organization := a.Get("legalName").kind != Missing || a.Get("foundingDate").kind != Missing
+	person := hasAgentValue(a.Get("givenName")) || hasAgentValue(a.Get("familyName")) || hasAgentValue(a.Get("affiliation"))
+	organization := hasAgentValue(a.Get("legalName")) || hasAgentValue(a.Get("foundingDate"))
 	personType, orgType, roleType := a.types()
 	if (person && (organization || orgType)) || (organization && personType) || (personType && orgType) {
 		return AgentConflict
 	}
-	if roleType || a.Get("roleName").kind != Missing {
+	if roleType || hasAgentValue(a.Get("roleName")) {
 		return AgentRole
 	}
 	if person {
@@ -68,16 +73,50 @@ func (a Agent) Kind() AgentKind {
 	if organization {
 		return AgentOrganization
 	}
-	if a.Get(keywordID).kind != Missing && len(a.value.fields) == 1 {
+	if a.referenceOnly() {
 		return AgentReference
 	}
 	if personType {
 		return AgentPerson
 	}
-	if orgType || a.Get(nameTerm).kind != Missing {
+	if orgType || hasAgentValue(a.Get(nameTerm)) {
 		return AgentOrganization
 	}
 	return AgentUnknown
+}
+
+func (a Agent) referenceOnly() bool {
+	if a.Identifier().kind != String {
+		return false
+	}
+	for _, field := range a.value.fields {
+		name := expandIRI(field.Name, a.terms)
+		if name != keywordID && name != keywordContext && hasAgentValue(field.Value) {
+			return false
+		}
+	}
+	return true
+}
+
+func hasAgentValue(v Value) bool {
+	switch v.kind {
+	case Missing, Null:
+		return false
+	case Array:
+		for _, item := range v.items {
+			if hasAgentValue(item) {
+				return true
+			}
+		}
+		return false
+	case Object:
+		for _, key := range []string{keywordList, keywordSet, keywordValue} {
+			if field := v.Get(key); field.kind != Missing {
+				return hasAgentValue(field)
+			}
+		}
+	}
+	return true
 }
 func (a Agent) types() (person, organization, role bool) {
 	for _, typ := range a.Get(keywordType).Values() {
@@ -106,16 +145,21 @@ func (d *Document) agents(term string) []Agent {
 	return agentValues(d.Get(term), terms, term)
 }
 func agentValues(value Value, terms map[string]termDefinition, relation string) []Agent {
-	if list := value.Get(keywordList); list.kind != Missing {
-		value = list
-	}
-	if set := value.Get(keywordSet); set.kind != Missing {
-		value = set
-	}
-	values := value.Values()
-	agents := make([]Agent, len(values))
-	for i, v := range values {
-		agents[i] = Agent{value: v, terms: scopedTerms(v, terms), relation: relation}
+	var agents []Agent
+	for _, v := range value.Values() {
+		if v.kind == Null {
+			continue
+		}
+		localTerms := scopedTerms(v, terms)
+		if list := v.Get(keywordList); list.kind != Missing {
+			agents = append(agents, agentValues(list, localTerms, relation)...)
+		} else if set := v.Get(keywordSet); set.kind != Missing {
+			agents = append(agents, agentValues(set, localTerms, relation)...)
+		} else if v.kind == Array {
+			agents = append(agents, agentValues(v, localTerms, relation)...)
+		} else {
+			agents = append(agents, Agent{value: v, terms: localTerms, relation: relation})
+		}
 	}
 	return agents
 }

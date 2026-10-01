@@ -1,0 +1,19 @@
+{
+  "@context": "https://w3id.org/codemeta/3.0",
+  "name": {"@value": "Example"},
+  "description": {"@value": "Description", "@language": null},
+  "version": {"@set": ["1.2", "1.3"]},
+  "author": [{"@set": [
+    {
+      "@type": "Person",
+      "givenName": {"@list": ["Ada", "Augusta"]},
+      "familyName": {"@value": "Lovelace"}
+    },
+    {"@context": [{}], "schema:name": {"@value": "Grace Hopper"}},
+    {
+      "@type": "Role",
+      "roleName": {"@set": ["creator", "developer"]},
+      "author": [{"@set": [{"name": "Team"}]}]
+    }
+  ]}]
+}

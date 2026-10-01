@@ -96,3 +96,15 @@ func commandOutput(t *testing.T, dir, name string, args ...string) string {
 	}
 	return string(output)
 }
+
+func TestConsumerProjection(t *testing.T) {
+	binary := filepath.Join(t.TempDir(), "read")
+	commandOutput(t, "", "go", "build", "-o", binary, "./examples/read")
+	got := commandOutput(t, "", binary, "testdata/projection.json")
+	const want = "Name: Example\nContext: 3.0\nSoftware version: 1.2, 1.3\n" +
+		"Author:  Ada Augusta Lovelace\nAuthor: Grace Hopper  \nAuthor:   \n" +
+		"Role: creator, developer\nAuthor: Team  \n"
+	if got != want {
+		t.Fatalf("output:\n%s\nwant:\n%s", got, want)
+	}
+}

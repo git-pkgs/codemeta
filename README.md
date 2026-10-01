@@ -16,6 +16,7 @@ package main
 import (
 	"fmt"
 	"log"
+	"strings"
 
 	"github.com/git-pkgs/codemeta"
 )
@@ -28,7 +29,7 @@ func main() {
 
 	fmt.Printf("Name: %s\n", doc.Name())
 	fmt.Printf("CodeMeta context: %s\n", doc.Version())
-	fmt.Printf("Software version: %s\n", doc.SoftwareVersion().Text())
+	fmt.Printf("Software version: %s\n", strings.Join(doc.Strings("version"), ", "))
 	for _, author := range doc.Author() {
 		fmt.Println(author.Name(), author.GivenName(), author.FamilyName())
 	}
@@ -44,7 +45,7 @@ Documents are immutable and can be read concurrently. Parsing copies retained te
 
 ### Metadata
 
-`Name` and `Description` return text. `CodeRepository`, `SoftwareVersion`, `License`, `Keywords`, `ProgrammingLanguages`, `DatePublished`, `DateModified`, `DevelopmentStatus`, and `Identifier` return values that retain the written form. `Version` identifies the pinned CodeMeta context. It does not return the software version.
+`Name` and `Description` return the first nonempty projected string. `CodeRepository`, `SoftwareVersion`, `License`, `Keywords`, `ProgrammingLanguages`, `DatePublished`, `DateModified`, `DevelopmentStatus`, and `Identifier` return values that retain the written form. `Version` identifies the pinned CodeMeta context. It does not return the software version.
 
 Use `Get` to access any field, including unknown fields and invalid metadata:
 
@@ -55,16 +56,19 @@ for _, keyword := range doc.Keywords().Values() {
 }
 ```
 
-`Strings` projects a term into display text, unwrapping `@list`, `@set`, and `@value` and reading `@id` or `name` from objects. It returns scalar spellings in source order and skips empty strings and nulls:
+`Document.Strings` and `Agent.Strings` project a term into display text, unwrapping `@list`, `@set`, and `@value` and reading `@id` or `name` from objects. They resolve fields in their local context, return scalar spellings in source order, and skip empty strings and nulls:
 
 ```go
 fmt.Println(doc.Strings("keywords"))
 fmt.Println(doc.Strings("license"))
+for _, author := range doc.Author() {
+	fmt.Println(author.Strings("givenName"), author.Strings("roleName"))
+}
 ```
 
 Values expose `Kind`, `Text`, `Items`, `Fields`, and `Position`. `Items` returns only array elements; `Values` returns array elements or a single scalar or object. A missing field has kind `Missing` and no values, while explicit JSON `Null` remains a value. Numbers retain their spelling and precision. Dates retain their text.
 
-`Author`, `Contributor`, `Maintainer`, `CopyrightHolder`, and `Funder` return ordered agent views, accepting either a single value or an array. `Agent.Kind` distinguishes people, organisations, strings, ID references, roles, and conflicting fields. `Value` preserves each original value; `Get` accesses its fields. `RoleName` and `Agents` expose a role and its nested agents without discarding the wrapper.
+`Author`, `Contributor`, `Maintainer`, `CopyrightHolder`, and `Funder` return ordered agent views, accepting single values, arrays, and list or set containers within arrays. Null entries are skipped. `Agent.Kind` distinguishes people, organisations, strings, ID references, roles, and conflicting fields. `Value` preserves each original value; `Get` accesses its fields. `Name`, `GivenName`, and `FamilyName` return the first nonempty projected string; `Name` also returns a text agent's value. `RoleName` and `Agents` expose a role and its nested agents without discarding the wrapper.
 
 `Document.Get` and `Agent.Get` resolve known aliases and prefixed or full term IRIs when the declared context is usable. An exact written key takes precedence. `Value.Get` always uses the exact key. `Fields` retains written keys and their positions, including both keys when aliases conflict. Both `http://schema.org/` and `https://schema.org/` resolve to the same schema term. CodeMeta namespace IRIs remain specific to each pinned context.
 

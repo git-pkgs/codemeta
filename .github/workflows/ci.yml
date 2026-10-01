@@ -68,6 +68,9 @@ jobs:
           "$RUNNER_TEMP/read-tinygo" testdata/upstream/codemeta-software.json > "$RUNNER_TEMP/tinygo-output"
           "$RUNNER_TEMP/read-go" testdata/upstream/codemeta-software.json > "$RUNNER_TEMP/go-output"
           diff -u "$RUNNER_TEMP/go-output" "$RUNNER_TEMP/tinygo-output"
+          "$RUNNER_TEMP/read-tinygo" testdata/projection.json > "$RUNNER_TEMP/tinygo-output"
+          "$RUNNER_TEMP/read-go" testdata/projection.json > "$RUNNER_TEMP/go-output"
+          diff -u "$RUNNER_TEMP/go-output" "$RUNNER_TEMP/tinygo-output"
 
   lint:
     runs-on: ubuntu-latest
