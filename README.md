@@ -55,6 +55,13 @@ for _, keyword := range doc.Keywords().Values() {
 }
 ```
 
+`Strings` projects a term into display text, unwrapping `@list`, `@set`, and `@value` and reading `@id` or `name` from objects. It returns scalar spellings in source order and skips empty strings and nulls:
+
+```go
+fmt.Println(doc.Strings("keywords"))
+fmt.Println(doc.Strings("license"))
+```
+
 Values expose `Kind`, `Text`, `Items`, `Fields`, and `Position`. `Items` returns only array elements; `Values` returns array elements or a single scalar or object. A missing field has kind `Missing` and no values, while explicit JSON `Null` remains a value. Numbers retain their spelling and precision. Dates retain their text.
 
 `Author`, `Contributor`, `Maintainer`, `CopyrightHolder`, and `Funder` return ordered agent views, accepting either a single value or an array. `Agent.Kind` distinguishes people, organisations, strings, ID references, roles, and conflicting fields. `Value` preserves each original value; `Get` accesses its fields. `RoleName` and `Agents` expose a role and its nested agents without discarding the wrapper.
