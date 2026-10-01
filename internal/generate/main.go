@@ -172,6 +172,19 @@ func readRanges(r io.Reader) (map[string]string, error) {
 			}
 		}
 	}
+	// These properties occur in the pinned contexts but not the property CSV.
+	for key, expected := range map[string]string{
+		"codemeta:contIntegration": "URL",
+		"codemeta:embargoDate":     "Date",
+		"schema:creator":           "Organization Person",
+		"schema:archivedAt":        "URL WebPage",
+		"schema:encodingFormat":    "Text URL",
+		"schema:featureList":       "Text URL",
+	} {
+		if ranges[key] == "" {
+			ranges[key] = expected
+		}
+	}
 	return ranges, nil
 }
 func contains(types, typ string) bool {
@@ -186,7 +199,7 @@ func translate(expression string) (string, error) {
 	var types []string
 	for _, name := range strings.Split(expression, " or ") {
 		switch name {
-		case "Text", "URL", "Number", "Integer", "Boolean", "Date", "Datetime", "ComputerLanguage", "Review", "SoftwareApplication", "CreativeWork", "SoftwareSourceCode", "DataFeed", "Organization", "Person", "MediaObject", "Grant", "PropertyValue", "PostalAddress", "ContactPoint", "ScholarlyArticle":
+		case "Text", "URL", "Number", "Integer", "Boolean", "Date", "Datetime", "ComputerLanguage", "Review", "SoftwareApplication", "CreativeWork", "SoftwareSourceCode", "DataFeed", "Organization", "Person", "MediaObject", "Grant", "PropertyValue", "PostalAddress", "ContactPoint", "ScholarlyArticle", "WebPage":
 			types = append(types, name)
 		default:
 			return "", fmt.Errorf("unsupported property type %q", expression)

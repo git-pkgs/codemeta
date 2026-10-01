@@ -15,8 +15,23 @@ func (d *Document) Strings(term string) []string {
 	return stringValues(d.Get(term), terms)
 }
 
+// Strings projects an agent field using the agent's local context.
+func (a Agent) Strings(term string) []string {
+	return stringValues(a.Get(term), a.terms)
+}
+
+func firstString(values []string) string {
+	if len(values) == 0 {
+		return ""
+	}
+	return values[0]
+}
+
 func stringValues(value Value, terms map[string]termDefinition) []string {
-	var values []string
+	return appendStringValues(nil, value, terms)
+}
+
+func appendStringValues(values []string, value Value, terms map[string]termDefinition) []string {
 	for _, item := range value.Values() {
 		if item.kind == String || item.kind == Number || item.kind == Boolean {
 			if item.text != "" {
@@ -35,9 +50,9 @@ func stringValues(value Value, terms map[string]termDefinition) []string {
 			if field.kind == Missing {
 				continue
 			}
-			projected := stringValues(field, localTerms)
-			values = append(values, projected...)
-			if key != keywordID || len(projected) != 0 {
+			count := len(values)
+			values = appendStringValues(values, field, localTerms)
+			if key != keywordID || len(values) != count {
 				break
 			}
 		}

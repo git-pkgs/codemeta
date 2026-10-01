@@ -115,7 +115,7 @@ func TestLiteralValidation(t *testing.T) {
 			want = append(want, codemeta.Diagnostic{Code: tc.code, Path: "name.@value", Message: tc.message,
 				Position: codemeta.Position{Line: 1, Column: strings.Index(input, `"@value":`) + len(`"@value":`) + 1}})
 		}
-		want = append(want, codemeta.Diagnostic{Code: "value_type", Path: "name.@language", Message: "@language must be a string",
+		want = append(want, codemeta.Diagnostic{Code: "value_type", Path: "name.@language", Message: "@language must be a string or null",
 			Position: codemeta.Position{Line: 1, Column: strings.Index(input, `"@language":`) + len(`"@language":`) + 1}})
 		if got := doc.Validate(); !reflect.DeepEqual(got, want) {
 			t.Fatalf("%s: got %+v, want %+v", input, got, want)

@@ -33,32 +33,42 @@ func (d *Document) Version() Version {
 	return d.context.version
 }
 func inspectContext(v Value) contextState {
+	return inspectScopedContext(v, nil)
+}
+
+func inspectScopedContext(v Value, inherited map[string]termDefinition) contextState {
 	c := contextState{missing: v.kind == Missing}
-	c.include(v)
+	c.include(v, inherited)
 	if c.conflicting {
 		c.version = UnknownVersion
 	}
 	return c
 }
-func (c *contextState) include(v Value) {
+func (c *contextState) include(v Value, inherited map[string]termDefinition) {
 	switch v.kind {
 	case Missing:
 		return
 	case Array:
-		if len(v.items) == 0 {
+		if len(v.items) == 0 && inherited == nil {
 			c.unknown = true
 		}
 		for _, item := range v.items {
 			if item.kind == Array {
 				c.unknown = true
 			} else {
-				c.include(item)
+				c.include(item, inherited)
 			}
 		}
 	case String:
 		c.selectVersion(contextURL(v.text))
 	case Object:
-		if len(v.fields) == 0 || (c.version != UnknownVersion && unchangedDefinitions(v, contextTerms[c.version])) {
+		terms := inherited
+		if c.version != UnknownVersion {
+			terms = contextTerms[c.version]
+		} else if c.unknown || c.modified || c.conflicting {
+			terms = nil
+		}
+		if unchangedDefinitions(v, terms) {
 			return
 		}
 		for _, version := range []Version{Version2, Version3, VersionMaster} {
@@ -140,10 +150,10 @@ func unchangedDefinitions(v Value, terms map[string]termDefinition) bool {
 
 func scopedTerms(v Value, inherited map[string]termDefinition) map[string]termDefinition {
 	if local := v.Get(keywordContext); local.kind != Missing {
-		if local.kind == Object && unchangedDefinitions(local, inherited) {
+		state := inspectScopedContext(local, inherited)
+		if state.version == "" && !state.unknown && !state.modified && !state.conflicting {
 			return inherited
 		}
-		state := inspectContext(local)
 		if !state.usable() {
 			return nil
 		}

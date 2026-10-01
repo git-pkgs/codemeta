@@ -132,6 +132,9 @@ func validIRI(text string) bool {
 	if strings.ContainsFunc(text, func(r rune) bool { return unicode.IsSpace(r) || unicode.IsControl(r) }) {
 		return false
 	}
+	if strings.HasPrefix(text, "_:") {
+		return len(text) > len("_:")
+	}
 	_, err := url.Parse(text)
 	return err == nil
 }

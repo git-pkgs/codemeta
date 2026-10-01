@@ -22,7 +22,7 @@ func (d *Document) Validate() []Diagnostic {
 		limit = 100
 	}
 	c := validator{limit: limit}
-	c.context(d.root.Get(keywordContext), keywordContext, d.root.pos)
+	c.context(d.root.Get(keywordContext), keywordContext, d.root.pos, nil)
 	var terms map[string]termDefinition
 	if d.context.usable() {
 		terms = contextTerms[d.context.version]
@@ -60,8 +60,8 @@ func (c *validator) add(pos Position, path, code, message string) {
 	copy(c.diagnostics[i+1:], c.diagnostics[i:len(c.diagnostics)-1])
 	c.diagnostics[i] = d
 }
-func (c *validator) context(v Value, path string, fallback Position) {
-	state := inspectContext(v)
+func (c *validator) context(v Value, path string, fallback Position, inherited map[string]termDefinition) {
+	state := inspectScopedContext(v, inherited)
 	pos := v.pos
 	if pos.Line == 0 {
 		pos = fallback
@@ -69,7 +69,7 @@ func (c *validator) context(v Value, path string, fallback Position) {
 	if state.missing {
 		c.add(pos, path, "missing_context", "@context is missing")
 	}
-	if state.unknown || (state.version == "" && !state.missing && !state.modified && !state.conflicting) {
+	if state.unknown || (state.version == "" && inherited == nil && !state.missing && !state.modified && !state.conflicting) {
 		c.add(pos, path, "unsupported_version", "context is not one of the pinned CodeMeta contexts")
 	}
 	if state.modified {
@@ -89,9 +89,7 @@ func itemPath(parent string, i int) string { return fmt.Sprintf("%s[%d]", parent
 func (c *validator) object(v Value, path string, terms map[string]termDefinition) {
 	if path != "" {
 		if local := v.Get(keywordContext); local.kind != Missing {
-			if local.kind != Object || !unchangedDefinitions(local, terms) {
-				c.context(local, fieldPath(path, keywordContext), v.pos)
-			}
+			c.context(local, fieldPath(path, keywordContext), v.pos, terms)
 			terms = scopedTerms(v, terms)
 		}
 	}
@@ -198,6 +196,8 @@ func (c *validator) keyword(v Value, name, path string, terms map[string]termDef
 	case keywordID:
 		if v.kind != String {
 			c.add(v.pos, path, "value_type", "@id must be a string")
+		} else if !validIRI(v.text) {
+			c.add(v.pos, path, "invalid_iri", "expected an IRI reference")
 		}
 	case keywordType:
 		c.typeValue(v, path, terms)
@@ -209,7 +209,13 @@ func (c *validator) keyword(v Value, name, path string, terms map[string]termDef
 		if v.kind == Object || v.kind == Array {
 			c.add(v.pos, path, "value_type", "@value must be a scalar")
 		}
-	case "@language", "@direction", keywordIndex:
+	case "@language", "@direction":
+		if v.kind != String && v.kind != Null {
+			c.add(v.pos, path, "value_type", name+" must be a string or null")
+		} else if name == "@direction" && v.kind == String && v.text != "ltr" && v.text != "rtl" {
+			c.add(v.pos, path, "invalid_direction", "@direction must be ltr, rtl, or null")
+		}
+	case keywordIndex:
 		if v.kind != String {
 			c.add(v.pos, path, "value_type", name+" must be a string")
 		}
